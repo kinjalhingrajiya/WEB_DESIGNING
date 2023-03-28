@@ -1,0 +1,12 @@
+In how many ways can a CSS be integrated as a web page?
+
+--> Three ways to css be intefrated as web page.
+1. Inline Css
+  ex. <div style="css code">
+2. Internal Css
+   ex. in a header part to write like this:
+<style>csscode</style>
+3. External Css
+    ex. to create a one file save with css extension and all code to put in the css file.
+     css file link to the html page using like tag in header part of html file.
+    <link rel="stylesheet" href="cssfile.css">

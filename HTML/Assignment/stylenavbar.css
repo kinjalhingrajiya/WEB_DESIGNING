@@ -1,0 +1,63 @@
+ body {
+     margin: 0px;
+     padding: 0px;
+ }
+ 
+ a {
+     text-decoration: none;
+     color: yellow
+ }
+ 
+ .main {
+     height: 50px;
+     background: black;
+     line-height: 50px;
+ }
+ 
+ li {
+     position: relative;
+     display: inline;
+     padding: 10px;
+ }
+ 
+ .home {
+     height: 5px;
+     width: 0;
+     background: lightblue;
+     position: absolute;
+     top: 100%;
+     left: 0;
+     transition: 1s;
+ }
+ 
+ .about {
+     height: 5px;
+     width: 0;
+     background: lightblue;
+     position: absolute;
+     top: 100%;
+     left: 0;
+     transition: 1s;
+ }
+ 
+ .contact {
+     height: 5px;
+     width: 0;
+     background: lightblue;
+     position: absolute;
+     top: 100%;
+     left: 0;
+     transition: 1s;
+ }
+ 
+ li:hover .home {
+     width: 50px;
+ }
+ 
+ li:hover .about {
+     width: 50px;
+ }
+ 
+ li:hover .contact {
+     width: 90px;
+ }
