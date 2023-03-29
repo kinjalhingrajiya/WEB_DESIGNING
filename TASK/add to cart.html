@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+        }
+        
+        .main {
+            box-shadow: 0px 0px 8px;
+            height: 450px;
+            width: 250px;
+            margin: 35px;
+        }
+        
+        .new {
+            height: 30px;
+            width: 60px;
+            background-color: coral;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            line-height: 30px;
+            top: 0;
+            right: 0;
+            ;
+            position: absolute;
+        }
+        
+        .shirt {
+            position: relative;
+        }
+        
+        .quickview {
+            height: 40px;
+            width: 250px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 40px;
+            top: 0;
+            left: 0;
+            position: absolute;
+            opacity: 0;
+            background-color: black;
+            color: white;
+            transition: .5s;
+        }
+        
+        .shirt:hover .quickview {
+            opacity: 1;
+            top: 230px;
+        }
+        
+        .info {
+            text-align: center;
+            line-height: 30px;
+            font-size: 20px;
+        }
+        
+        strike {
+            color: gray;
+        }
+        
+        .word {
+            word-spacing: 15px;
+        }
+        
+        .addtocart {
+            height: 30px;
+            width: 120px;
+            background: rgb(36, 168, 124);
+            color: white;
+            margin: 20px auto;
+            font-size: 15px;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bolder;
+            transition: .5s;
+        }
+        
+        .addtocart:hover {
+            outline: 3px solid rgb(36, 168, 124);
+            outline-offset: 5px;
+        }
+        
+        .red {
+            color: red;
+            font-weight: bold;
+        }
+        
+        .top {
+            display: flex;
+        }
+        /* end */
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="main">
+            <div class="shirt"><img src="http://www.shoppingforfun.in/images/m1.jpg" height="100%" width="100%" alt="">
+                <div class="new">New</div>
+                <div class="quickview">Quick View</div>
+            </div>
+
+            <div class="info">
+                <span class="red">Formal Blue shirt</span><br><span class="word"> <b>$45.99 </b><strike color="gray"><span class="gray">$69.71</span></strike>
+                </span>
+                <div class="addtocart">ADD TO CART</div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="shirt"><img src="http://www.shoppingforfun.in/images/m2.jpg" height="100%" width="100%" alt="">
+                <div class="new">New</div>
+                <div class="quickview">Quick View</div>
+            </div>
+
+            <div class="info">
+                <span class="red">Gabi Full Sleeve Sweatshirt</span><br><span class="word"> <b>$45.99 </b><strike color="gray"><span class="gray">$69.71</span></strike>
+                </span>
+                <div class="addtocart">ADD TO CART</div>
+            </div>
+        </div>
+
+
+        <div class="main">
+            <div class="shirt"><img src="http://www.shoppingforfun.in/images/m3.jpg" height="100%" width="100%" alt="">
+                <div class="new">New</div>
+                <div class="quickview">Quick View</div>
+            </div>
+
+            <div class="info">
+                <span class="red">Dark Blue Track Pants</span><br><span class="word"> <b>$80.99 </b><strike color="gray"><span class="gray">$89.71</span></strike>
+                </span>
+                <div class="addtocart">ADD TO CART</div>
+            </div>
+        </div>
+
+
+        <div class="main">
+            <div class="shirt"><img src="http://www.shoppingforfun.in/images/m4.jpg" height="100%" width="100%" alt="">
+                <div class="new">New</div>
+                <div class="quickview">Quick View</div>
+            </div>
+
+            <div class="info">
+                <span class="red">Round Neck Black T-Shirt</span><br><span class="word"> <b>$190.99 </b><strike color="gray"><span class="gray">$159.71</span></strike>
+                </span>
+                <div class="addtocart">ADD TO CART</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
