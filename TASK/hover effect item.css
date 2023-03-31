@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+}
+
+.top {
+    display: flex;
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+}
+
+.top2 {
+    display: flex;
+    position: absolute;
+    opacity: 0;
+}
+
+.top3 {
+    display: flex;
+    position: absolute;
+    opacity: 0;
+}
+
+.top4 {
+    display: flex;
+    position: absolute;
+    opacity: 0;
+}
+
+body {
+    margin: 0;
+}
+
+.main1 {
+    box-shadow: 0px 0px 8px;
+    height: 450px;
+    width: 250px;
+    margin: 35px;
+}
+
+.main2 {
+    box-shadow: 0px 0px 8px;
+    height: 450px;
+    width: 250px;
+    margin: 35px;
+}
+
+.main3 {
+    box-shadow: 0px 0px 8px;
+    height: 450px;
+    width: 250px;
+    margin: 35px;
+}
+
+.main4 {
+    box-shadow: 0px 0px 8px;
+    height: 450px;
+    width: 250px;
+    margin: 35px;
+}
+
+.new {
+    height: 30px;
+    width: 60px;
+    background-color: coral;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.shirt {
+    position: relative;
+}
+
+.quickview {
+    height: 40px;
+    width: 250px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    background-color: black;
+    color: white;
+    transition: .5s;
+}
+
+.shirt:hover .quickview {
+    opacity: 1;
+    top: 230px;
+}
+
+.info {
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+strike {
+    color: gray;
+}
+
+.word {
+    word-spacing: 15px;
+}
+
+.addtocart {
+    height: 30px;
+    width: 120px;
+    background: rgb(36, 168, 124);
+    color: white;
+    margin: 20px auto;
+    font-size: 15px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bolder;
+    transition: .5s;
+}
+
+.addtocart:hover {
+    outline: 3px solid rgb(36, 168, 124);
+    outline-offset: 5px;
+}
+
+.red {
+    color: red;
+    font-weight: bold;
+}
+
+.shirtfront {
+    top: 0;
+    left: 0;
+    height: 300px;
+    width: 250px;
+    position: absolute;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+
+li {
+    display: flex;
+}
+
+.men {
+    list-style-type: none;
+    display: inline;
+    margin: auto;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    margin: 110px;
+    text-align: center;
+}
+
+.women {
+    list-style-type: none;
+    margin: auto;
+    display: inline;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    margin: 110px;
+    text-align: center;
+}
+
+.bag {
+    list-style-type: none;
+    margin: auto;
+    display: inline;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    margin: 100px;
+    text-align: center;
+}
+
+.footwear {
+    list-style-type: none;
+    display: inline;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.shirt {
+    position: relative;
+    height: 300px;
+    width: 250px;
+}
+
+.shirtback {
+    height: 300px;
+    width: 250px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: 1s;
+}
+
+.shirt:hover .shirtfront {
+    transform: rotateY(180deg);
+}
+
+.shirt:hover .shirtback {
+    transform: rotateY(0deg);
+}
+
+.men:hover {
+    background-color: brown;
+}
+
+.women:hover {
+    background-color: brown;
+}
+
+.bag:hover {
+    background-color: brown;
+}
+
+.footwear:hover {
+    background-color: brown;
+}
+
+.men:hover .top {
+    opacity: 1;
+}
+
+.women:hover .top2 {
+    opacity: 1;
+}
+
+.bag:hover .top3 {
+    opacity: 1;
+}
+
+.footwear:hover .top4 {
+    opacity: 1;
+}

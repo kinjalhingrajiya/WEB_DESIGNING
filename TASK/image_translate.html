@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .b1 {
+            height: 200px;
+            width: 300px;
+            background: url(http://www.shoppingforfun.in/images/bot_2.jpg);
+            background-size: 100% 100%;
+            position: relative;
+            margin: 100px auto;
+            overflow: hidden;
+        }
+        
+        .b2 {
+            height: 200px;
+            width: 300px;
+            background: rgba(0, 0, 0, .14);
+            top: -100%;
+            left: 100%;
+            position: absolute;
+            transition: 1s;
+        }
+        
+        .b3 {
+            height: 200px;
+            width: 300px;
+            background: rgba(0, 0, 0, .14);
+            top: 100%;
+            left: -100%;
+            position: absolute;
+            transition: 1s;
+        }
+        
+        .b1:hover .b2 {
+            transform: translate(-100%, 100%);
+        }
+        
+        .b1:hover .b3 {
+            transform: translate(100%, -100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="b1">
+        <div class="b2"></div>
+        <div class="b3"></div>
+    </div>
+
+</body>
+
+</html>

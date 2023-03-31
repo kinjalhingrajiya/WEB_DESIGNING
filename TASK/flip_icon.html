@@ -1,0 +1,140 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        a {
+            height: 100px;
+            width: 100px;
+            display: block;
+            background: Blue;
+            position: relative;
+            margin: auto;
+            text-align: center;
+            line-height: 100px;
+            transition: .1s;
+            transform-style: preserve-3d;
+            border: 3px solid;
+            float: none;
+        }
+        
+        .front {
+            height: 100px;
+            width: 100px;
+            /* background: lightblue; */
+            position: absolute;
+            color: white;
+            top: 0;
+            left: 0;
+            backface-visibility: hidden;
+            transform: translateZ(35px);
+            float: none;
+        }
+        
+        .fa {
+            display: inline-block;
+        }
+        
+        .back {
+            height: 100px;
+            width: 100px;
+            /* background: lightpink; */
+            position: absolute;
+            color: blue;
+            top: 0;
+            left: 0;
+            backface-visibility: hidden;
+            transform: rotateX(90deg) translateZ(35px);
+            float: none;
+            border: 2px solid;
+        }
+        
+        a:hover {
+            transform: rotateX(-90deg) translateZ(35px);
+        }
+    </style>
+</head>
+
+<body>
+    <a>
+        <div class="front"><i class="fa-brands fa-facebook-f"></i></div>
+        <div class="back"><i class="fa-brands fa-facebook-f"></i></div>
+    </a>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <style>
+        a {
+            height: 50px;
+            width: 50px;
+            /* background: gray; */
+            display: inline;
+            display: block;
+            text-align: center;
+            line-height: 50px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: 1s;
+            margin: 150px auto;
+        }
+        
+        .front {
+            height: 50px;
+            width: 50px;
+            background: lightblue;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateZ(35px);
+            backface-visibility: hidden;
+        }
+        
+        .back {
+            height: 50px;
+            width: 50px;
+            background: lightcoral;
+            position: absolute;
+            top: 0;
+            left: 0;
+            backface-visibility: hidden;
+            transform: rotateX(90deg) translateZ(35px);
+        }
+        
+        a:hover {
+            transform: rotateX(-90deg) translateZ(35px);
+        }
+    </style>
+</head>
+
+<body>
+    <p></p>
+    <div></div>
+
+    <a href="">
+        <div class="front"><i class="fa-brands fa-facebook-f"></i></div>
+        <div class="back"><i class="fa-brands fa-facebook-f"></i></div>
+    </a>
+
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: yellow;
+}
+
+.main1 {
+    height: 50px;
+    width: 100%;
+    background: black;
+    padding-top: 25px;
+}
+
+.menu {
+    position: relative;
+    display: inline;
+    padding-bottom: 30px;
+    margin: 10px;
+}
+
+.home {
+    height: 5px;
+    width: 0;
+    background: lightblue;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: 1s;
+}
+
+.about {
+    height: 5px;
+    width: 0;
+    background: lightblue;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: 1s;
+}
+
+.menwear {
+    height: 5px;
+    width: 0;
+    background: lightblue;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: 1s;
+}
+
+.womenwear {
+    height: 5px;
+    width: 0;
+    background: lightblue;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: 1s;
+}
+
+.menu:hover .home {
+    width: 100%;
+}
+
+.menu:hover .about {
+    width: 100%;
+}
+
+.menu:hover .menwear {
+    width: 100%;
+}
+
+.menu:hover .womenwear {
+    width: 100%;
+}
+
+.submenu1 {
+    height: 300px;
+    width: 600px;
+    position: relative;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+.submenu2 {
+    height: 300px;
+    width: 600px;
+    position: relative;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+.p1 {
+    height: 300px;
+    width: 33.33%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    line-height: 40px;
+}
+
+.p2 {
+    height: 300px;
+    width: 33.33%;
+    position: absolute;
+    top: 0;
+    left: 33.33%;
+    line-height: 40px;
+}
+
+.p3 {
+    height: 300px;
+    width: 33.33%;
+    position: absolute;
+    top: 0;
+    left: 60%;
+    padding-top: 30px;
+}
+
+.p4 {
+    height: 300px;
+    width: 33.33%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 30px;
+}
+
+.p5 {
+    height: 300px;
+    width: 33.33%;
+    position: absolute;
+    top: 0;
+    left: 33.33%;
+    line-height: 40px;
+    padding-left: 50px;
+}
+
+.p6 {
+    height: 300px;
+    width: 33.33%;
+    top: 0;
+    left: 66.66%;
+    position: absolute;
+    line-height: 40px;
+}
+
+.menu:hover .submenu1 {
+    display: block;
+}
+
+.menu:hover .submenu2 {
+    display: block;
+}
