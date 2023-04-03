@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav {
+            height: 50px;
+            background-color: red;
+        }
+        
+        li {
+            display: inline;
+            list-style-type: none;
+            margin-right: 30px;
+            line-height: 50px;
+        }
+        
+        .news {
+            height: 200px;
+            width: 600px;
+            background: gray;
+            display: flex;
+        }
+        
+        .f,
+        .t {
+            display: block;
+        }
+        
+        .fashion1 {
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+        }
+        
+        .fashion2 {
+            height: 200px;
+            width: 200px;
+            background-color: bisque;
+        }
+        
+        .part1 {
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+        }
+        
+        .n1:hover :.news {
+            display: block;
+        }
+        
+        .p1 {
+            height: 200px;
+            width: 200px;
+            background: palegreen;
+            display: flex;
+            position: absolute;
+        }
+        
+        .p2 {
+            height: 200px;
+            width: 200px;
+            background: blue;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .p3 {
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            background: green;
+            top: 0;
+            left: 0;
+        }
+        
+        .main {
+            display: flex;
+            height: 200px;
+            width: 600px;
+            position: relative;
+        }
+        
+        li {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="super">
+        <div class="nav">
+            <ul>
+                <li class="n1">News
+                    <div class="main">
+                        <div class="p1">
+                            <li>Fashion
+                                <div class="p2">Fashion1</div>
+                                <div class="p3">Fashion2</div>
+                            </li>
+                            <!-- <li>technology
+                                <div class="p2">Fashion1</div>
+                                <div class="p3">Fashion2</div>
+                            </li> -->
+                        </div>
+                    </div>
+                </li>
+                <li class="n1">Entertainment</li>
+            </ul>
+        </div>
+        <!-- <div class="news">
+            <div class="part1">
+                <li class="f">Fashion</li>
+                <li class="t">Technology</li>
+            </div>
+            <div class="fashion1">Fashion1</div>
+            <div class="fashion2">Fashion2</div>
+
+        </div> -->
+
+    </div>
+</body>
+
+</html>

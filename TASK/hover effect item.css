@@ -2,11 +2,21 @@
     box-sizing: border-box;
 }
 
+.nav {
+    position: relative;
+    background-color: blue;
+    height: 700px;
+}
+
+ul {
+    background-color: green;
+    height: 50px;
+}
+
 .top {
     display: flex;
     position: absolute;
     opacity: 0;
-    width: 100%;
 }
 
 .top2 {
@@ -34,28 +44,28 @@ body {
 .main1 {
     box-shadow: 0px 0px 8px;
     height: 450px;
-    width: 250px;
+    width: 200px;
     margin: 35px;
 }
 
 .main2 {
     box-shadow: 0px 0px 8px;
     height: 450px;
-    width: 250px;
+    width: 200px;
     margin: 35px;
 }
 
 .main3 {
     box-shadow: 0px 0px 8px;
     height: 450px;
-    width: 250px;
+    width: 200px;
     margin: 35px;
 }
 
 .main4 {
     box-shadow: 0px 0px 8px;
     height: 450px;
-    width: 250px;
+    width: 200px;
     margin: 35px;
 }
 
@@ -78,7 +88,7 @@ body {
 
 .quickview {
     height: 40px;
-    width: 250px;
+    width: 200px;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -138,7 +148,7 @@ strike {
     top: 0;
     left: 0;
     height: 300px;
-    width: 250px;
+    width: 200px;
     position: absolute;
     transform: rotateY(0deg);
     backface-visibility: hidden;
@@ -154,24 +164,24 @@ li {
 .men {
     list-style-type: none;
     display: inline;
-    margin: auto;
+    /* margin: auto; */
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    position: relative;
+    /* position: relative; */
     padding: 20px;
-    margin: 110px;
+    margin: 50px;
     text-align: center;
 }
 
 .women {
     list-style-type: none;
-    margin: auto;
+    /* margin: auto; */
     display: inline;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    position: relative;
+    /* position: relative; */
     padding: 20px;
     margin: 110px;
     text-align: center;
@@ -179,12 +189,12 @@ li {
 
 .bag {
     list-style-type: none;
-    margin: auto;
+    /* margin: auto; */
     display: inline;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    position: relative;
+    /* position: relative; */
     padding: 20px;
     margin: 100px;
     text-align: center;
@@ -197,8 +207,8 @@ li {
     font-weight: bold;
     text-align: center;
     align-items: center;
-    position: relative;
-    margin: auto;
+    /* position: relative; */
+    /* margin: auto; */
     padding: 20px;
     margin: 10px;
     text-align: center;
@@ -207,12 +217,12 @@ li {
 .shirt {
     position: relative;
     height: 300px;
-    width: 250px;
+    width: 200px;
 }
 
 .shirtback {
     height: 300px;
-    width: 250px;
+    width: 200px;
     top: 0;
     left: 0;
     position: absolute;
