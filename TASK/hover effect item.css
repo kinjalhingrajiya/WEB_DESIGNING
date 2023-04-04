@@ -4,37 +4,31 @@
 
 .nav {
     position: relative;
-    background-color: blue;
-    height: 700px;
+    height: 50px;
 }
 
 ul {
-    background-color: green;
     height: 50px;
 }
 
 .top {
     display: flex;
+    flex-wrap: wrap;
     position: absolute;
     opacity: 0;
+    z-index: 0;
 }
 
-.top2 {
-    display: flex;
-    position: absolute;
-    opacity: 0;
-}
-
-.top3 {
-    display: flex;
-    position: absolute;
-    opacity: 0;
-}
-
-.top4 {
-    display: flex;
-    position: absolute;
-    opacity: 0;
+.menu {
+    list-style-type: none;
+    display: inline;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    margin: 75px 95px;
+    text-align: center;
+    height: 50px;
 }
 
 body {
@@ -44,28 +38,7 @@ body {
 .main1 {
     box-shadow: 0px 0px 8px;
     height: 450px;
-    width: 200px;
-    margin: 35px;
-}
-
-.main2 {
-    box-shadow: 0px 0px 8px;
-    height: 450px;
-    width: 200px;
-    margin: 35px;
-}
-
-.main3 {
-    box-shadow: 0px 0px 8px;
-    height: 450px;
-    width: 200px;
-    margin: 35px;
-}
-
-.main4 {
-    box-shadow: 0px 0px 8px;
-    height: 450px;
-    width: 200px;
+    width: 230px;
     margin: 35px;
 }
 
@@ -82,13 +55,9 @@ body {
     position: absolute;
 }
 
-.shirt {
-    position: relative;
-}
-
 .quickview {
     height: 40px;
-    width: 200px;
+    width: 230px;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -147,8 +116,8 @@ strike {
 .shirtfront {
     top: 0;
     left: 0;
-    height: 300px;
-    width: 200px;
+    height: 250px;
+    width: 230px;
     position: absolute;
     transform: rotateY(0deg);
     backface-visibility: hidden;
@@ -157,78 +126,25 @@ strike {
     transition: 1s;
 }
 
-li {
-    display: flex;
-}
-
-.men {
-    list-style-type: none;
-    display: inline;
-    /* margin: auto; */
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    /* position: relative; */
-    padding: 20px;
-    margin: 50px;
-    text-align: center;
-}
-
-.women {
-    list-style-type: none;
-    /* margin: auto; */
-    display: inline;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    /* position: relative; */
-    padding: 20px;
-    margin: 110px;
-    text-align: center;
-}
-
-.bag {
-    list-style-type: none;
-    /* margin: auto; */
-    display: inline;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    /* position: relative; */
-    padding: 20px;
-    margin: 100px;
-    text-align: center;
-}
-
-.footwear {
-    list-style-type: none;
-    display: inline;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    align-items: center;
-    /* position: relative; */
-    /* margin: auto; */
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-}
-
 .shirt {
     position: relative;
     height: 300px;
-    width: 200px;
+    width: 230px;
 }
 
 .shirtback {
-    height: 300px;
-    width: 200px;
+    height: 250px;
+    width: 230px;
     top: 0;
     left: 0;
     position: absolute;
     transform: rotateY(180deg);
     backface-visibility: hidden;
     transition: 1s;
+}
+
+li {
+    display: flex;
 }
 
 .shirt:hover .shirtfront {
@@ -239,34 +155,38 @@ li {
     transform: rotateY(0deg);
 }
 
-.men:hover {
+.m:hover {
     background-color: brown;
 }
 
-.women:hover {
+.m1:hover {
     background-color: brown;
 }
 
-.bag:hover {
+.m2:hover {
     background-color: brown;
 }
 
-.footwear:hover {
+.m3:hover {
     background-color: brown;
 }
 
-.men:hover .top {
+.m:hover .top {
     opacity: 1;
+    z-index: 1;
 }
 
-.women:hover .top2 {
+.m1:hover .top {
     opacity: 1;
+    z-index: 2;
 }
 
-.bag:hover .top3 {
+.m2:hover .top {
     opacity: 1;
+    z-index: 2;
 }
 
-.footwear:hover .top4 {
+.m3:hover .top {
     opacity: 1;
+    z-index: 2;
 }
