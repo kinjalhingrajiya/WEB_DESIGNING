@@ -69,47 +69,35 @@
             border: 0.5px solid white;
         }
         
-        .a {
-            text-align: left;
-            top: 15%;
-            left: 0;
-            letter-spacing: 3px;
-            position: absolute;
-            color: rgb(252, 251, 251);
+        .x {
             display: flex;
-            padding-left: 10px;
+            padding: 10px 20px;
+        }
+        
+        .a {
+            width: 50%;
+            color: white;
+            letter-spacing: 3px;
+        }
+        
+        .a1 {
+            text-align: right;
+            font-size: 30px;
         }
         
         .b {
-            position: absolute;
-            top: 65%;
-            left: 0;
-            letter-spacing: 3px;
-            color: rgb(252, 251, 251);
-            padding: 10px;
+            padding: 100px 0 0 20px;
         }
         
-        .c {
-            position: absolute;
-            top: 80%;
-            left: 0;
-            letter-spacing: 3px;
-            font-size: 10px;
-            color: rgb(252, 251, 251);
-            margin-top: 8px;
-            padding-left: 10px;
+        .test {
+            background: gray;
+            height: 200px;
+            width: 400px;
         }
         
-        .icon {
-            position: absolute;
-            top: 10%;
-            color: rgb(252, 251, 251);
-            left: 80%;
-            font-size: 40px;
-        }
-        
-        .a .b .c .icon {
-            opacity: .5;
+        .b .c {
+            letter-spacing: 5px;
+            color: white;
         }
     </style>
 </head>
@@ -119,10 +107,18 @@
         <div class="circle1"></div>
         <div class="circle2"></div>
         <div class="circle3"></div>
+
+
         <div class="card">
-            <div class="a">MEMBERSHIP</div>
-            <div class="icon"><i class="fa-brands fa-dribbble"></i></div>
-            <div class="b">JAMES APPLESEED</dic>
+
+            <div class="x">
+                <div class="a">MEMBERSHIP</div>
+                <div class="a a1"><i class="fa-brands fa-dribbble"></i></div>
+
+            </div>
+
+            <div class="b">
+                <div class="c">JAMES APPLESEED</div>
                 <div class="c">UXMISFIT.TOOLS</div>
             </div>
         </div>

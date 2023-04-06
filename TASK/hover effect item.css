@@ -9,6 +9,7 @@
 
 ul {
     height: 50px;
+    width: 100%;
 }
 
 .top {
@@ -29,6 +30,7 @@ ul {
     margin: 75px 95px;
     text-align: center;
     height: 50px;
+    width: 100%;
 }
 
 body {

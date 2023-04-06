@@ -8,6 +8,7 @@ ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    height: 50px;
 }
 
 a {
@@ -26,8 +27,8 @@ a {
     height: 50px;
     position: relative;
     display: inline;
-    margin-left: 30px;
-    margin-top: 20px;
+    padding: 10px;
+    margin: 100px auto;
 }
 
 .submenu1 {
@@ -100,8 +101,3 @@ a {
 .menu:hover .submenu1 {
     display: block;
 }
-
-
-/* .menu:hover .submenu2 {
-    display: block;
-} */
