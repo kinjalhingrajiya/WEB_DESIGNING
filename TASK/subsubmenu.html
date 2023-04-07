@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav {
+            Height: 50px;
+            display: flex;
+            align-items: center;
+            background: coral;
+            position: relative;
+        }
+        
+        .m1 {
+            display: inline;
+            margin: 10px;
+            /* position: relative; */
+            background: green;
+        }
+        
+        .main {
+            height: 300px;
+            width: 500px;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            display: flex;
+            position: absolute;
+            text-align: center;
+            opacity: 0;
+        }
+        
+        .main1 {
+            height: 300px;
+            width: 150px;
+            border: 2px solid red;
+            background-color: aqua;
+            position: absolute;
+        }
+        
+        .main2 {
+            height: 300px;
+            width: 350px;
+            border: 2px solid red;
+            display: flex;
+            position: absolute;
+            left: 150px;
+            top: 0;
+        }
+        
+        .f1 {
+            height: 280px;
+            width: 175px;
+            border: 2px solid green;
+            margin: 10px 10px;
+            text-align: center;
+            display: none;
+        }
+        
+        .f2 {
+            height: 280px;
+            width: 175px;
+            border: 2px solid blue;
+            margin: 10px 10px;
+            text-align: center;
+            display: none;
+        }
+        
+        .f {
+            display: block;
+            top: 100px;
+        }
+        
+        .enter:hover .main {
+            opacity: 1;
+        }
+        
+        .news:hover .main {
+            opacity: 1;
+        }
+        
+        .fashion:hover {
+            background: yellow;
+        }
+        
+        .technology:hover {
+            background: yellow;
+        }
+        
+        .fashion:hover .f1 {
+            display: block;
+        }
+        
+        .technology:hover .f2 {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="m1 home">Home</div>
+        <div class="m1 news">News
+            <div class="main">
+                <div class="main1">
+                    <div class="f fashion">Fashion
+                        <div class="main2">
+                            <div class="f1">Fashion1</div>
+                            <div class="f1">Fashion1</div>
+                        </div>
+                    </div>
+                    <div class="f technology">Technology
+                        <div class="main2">
+                            <div class="f2">Technology1</div>
+                            <div class="f2">Technology2</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m1 enter">Entertainment
+            <div class="main">
+                <div class="main1">
+                    <div class="f fashion">Bollywood
+                        <div class="main2">
+                            <div class="f1">Bollywood1</div>
+                            <div class="f1">Bollywood2</div>
+                        </div>
+                    </div>
+                    <div class="f technology">Hollywood
+                        <div class="main2">
+                            <div class="f2">Hollywood1</div>
+                            <div class="f2">Hollywood2</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

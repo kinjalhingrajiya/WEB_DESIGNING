@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main1 {
+            height: 200px;
+            width: 300px;
+            background: url(https://radiustheme.com/demo/wordpress/themes/neeon/wp-content/uploads/2022/08/video_blog_01-1296x700.jpg);
+            background-size: 100% 100%;
+            margin: 150px auto;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .main2 {
+            height: 200px;
+            width: 300px;
+            background: rgba(0, 0, 0, 0.2);
+            background-size: 100% 100%;
+            /* margin: 150px auto; */
+            z-index: 3;
+            border-radius: 10px;
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+        
+        .main3 {
+            top: 80%;
+            left: 40%;
+            position: absolute;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            z-index: 2;
+            transition: 1s;
+            font-size: 20px;
+        }
+        
+        .main4 {
+            top: 100%;
+            left: 47%;
+            position: absolute;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            transition: 1s;
+        }
+        
+        .main1:hover .main3 {
+            /* transform: scale(1.2); */
+            transform: translateY(-40px);
+        }
+        
+        .main1:hover .main4 {
+            transform: translateY(-50px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main1">
+        <div class="main2">
+            <div><span class="main3">Action</span><span class="main4">(9)</span></div>
+        </div>
+    </div>
+</body>
+
+</html>
