@@ -19,37 +19,32 @@
         }
         
         .super {
-            /* position: relative; */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .round {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            position: relative;
+            height: 200px;
+            width: 200px;
+            /* background: black; */
+            margin: 150px auto;
         }
         
         .main {
             height: 200px;
             width: 200px;
             /* background: pink; */
-            top: 200px;
-            position: fixed;
+            top: 0;
+            left: 0;
+            position: absolute;
             border: 12px solid transparent;
             border-top: 12px solid lightblue;
             border-radius: 100px;
-            animation: effect1 1s linear infinite;
+            animation: effect1 4s linear infinite;
         }
         
         .main2 {
             height: 150px;
             width: 150px;
-            position: fixed;
-            top: 220px;
+            position: absolute;
+            top: 22px;
+            left: 25px;
             /* background: red; */
             border: 12px solid transparent;
             border-top: 12px solid lightgreen;
@@ -60,8 +55,9 @@
         .main3 {
             height: 90px;
             width: 90px;
-            position: fixed;
-            top: 240px;
+            position: absolute;
+            top: 55px;
+            left: 55px;
             /* background: yellow; */
             border: 12px solid transparent;
             border-top: 12px solid lightseagreen;
@@ -85,15 +81,15 @@
         }
     </style>
 </head>
-<div class="super">
-    <div class="main round"> </div>
-    <div class="main2 round"> </div>
-    <div class="main3 round">
 
-    </div>
+<body></body>
+<div class="super">
+    <div class="main"> </div>
+    <div class="main2"> </div>
+    <div class="main3"></div>
 </div>
 
-<body>
+
 </body>
 
 </html>
