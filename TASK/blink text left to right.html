@@ -10,17 +10,34 @@
         h2 {
             height: 50px;
             width: 200px;
-            background: lightblue;
+            /* background: lightblue; */
             position: relative;
+            color: white;
         }
         
         h2::after {
+            content: "";
             height: 50px;
-            width: 20px;
-            background: lightcoral;
+            width: 10px;
+            background: #000;
             position: absolute;
             top: 0;
             left: 0;
+            z-index: -1;
+            animation: ani .3s infinite, ani2 10s infinite;
+            opacity: 0;
+        }
+        
+        @keyframes ani {
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes ani2 {
+            100% {
+                left: 190px;
+            }
         }
     </style>
 </head>

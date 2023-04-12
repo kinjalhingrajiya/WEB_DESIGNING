@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        BODY {
+            background-color: black;
+            display: inline;
+        }
+        
+        .main {
+            display: flex;
+            position: relative;
+        }
+        
+        .eye1 {
+            height: 5px;
+            width: 150px;
+            background: white;
+            border-radius: 10%;
+            text-align: center;
+            position: absolute;
+            top: 150px;
+            left: 50%;
+            z-index: 5;
+            animation: ani2 2s infinite;
+        }
+        
+        .eye2 {
+            height: 5px;
+            width: 150px;
+            background: white;
+            border-radius: 10%;
+            position: absolute;
+            text-align: center;
+            position: absolute;
+            top: 150px;
+            left: 70%;
+            z-index: 5;
+            animation: ani2 2s infinite;
+        }
+        
+        .eye3 {
+            height: 150px;
+            width: 150px;
+            background: white;
+            border-radius: 60%;
+            position: absolute;
+            top: 200px;
+            left: 50%;
+        }
+        
+        .eye4 {
+            height: 150px;
+            width: 150px;
+            background: white;
+            border-radius: 60%;
+            position: absolute;
+            top: 200px;
+            left: 70%;
+        }
+        
+        .sub1 {
+            height: 150px;
+            width: 150px;
+            background: black;
+            /* border-radius: 60%; */
+            position: absolute;
+            top: 200px;
+            left: 50%;
+            animation: eyes 3s infinite;
+        }
+        
+        .sub2 {
+            height: 150px;
+            width: 150px;
+            background: black;
+            /* border-radius: 60%; */
+            position: absolute;
+            top: 200px;
+            left: 70%;
+            animation: eyes 3s infinite;
+        }
+        
+        .eye5 {
+            height: 80px;
+            width: 80px;
+            background: black;
+            border-radius: 60%;
+            position: absolute;
+            top: 220px;
+            left: 55%;
+            animation: ani 1s infinite;
+            animation-delay: 1s;
+        }
+        
+        .eye6 {
+            height: 80px;
+            width: 80px;
+            background: black;
+            border-radius: 60%;
+            position: absolute;
+            top: 220px;
+            left: 75%;
+            animation: ani1 1s infinite;
+            animation-delay: 1s;
+        }
+        
+        @keyframes eyes {
+            from {
+                top: 200px;
+            }
+            to {
+                top: 0;
+            }
+        }
+        
+        @keyframes ani {
+            from {
+                left: 55%;
+            }
+            to {
+                left: 50%;
+            }
+        }
+        
+        @keyframes ani1 {
+            from {
+                left: 75%;
+            }
+            to {
+                left: 70%;
+            }
+        }
+        
+        @keyframes ani2 {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="eye1"></div>
+        <div class="eye2"></div>
+
+        <div class="eye3"></div>
+        <div class="sub1"></div>
+
+        <div class="eye4"></div>
+        <div class="sub2"></div>
+
+        <div class="eye5"></div>
+        <div class="eye6"></div>
+    </div>
+</body>
+
+</html>
