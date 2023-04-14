@@ -1,25 +1,15 @@
-@media(max-width:500px) {
-    .logo {
-        width: 100%;
-    }
-    .nav {
-        width: 100%;
-    }
-}
-
 @media(max-width:700px) {
     .logo {
-        width: 100%;
-    }
-    .nav {
-        width: 100%;
-    }
-}
-
-@media(max-width:500px) {
-    .part2 {
-        width: 100%;
+        width: 50%;
         text-align: center;
+    }
+    .navhome {
+        display: none;
+    }
+    .bar {
+        display: block;
+        text-align: center;
+        ;
     }
 }
 
@@ -30,21 +20,9 @@
     }
 }
 
-@media(max-width:500px) {
-    .product1 {
-        width: 50%
-    }
-}
-
 @media(max-width:700px) {
     .product1 {
         width: 50%
-    }
-}
-
-@media(max-width:500px) {
-    .pro1 {
-        width: 100%
     }
 }
 
@@ -54,26 +32,29 @@
     }
 }
 
-@media(max-width:500px) {
-    .pi {
+@media(max-width:700px) {
+    .part3img {
+        width: 100%;
+    }
+    .part3info {
         width: 100%;
     }
 }
 
-@media(max-width:500px) {
+@media(max-width:700px) {
     .product2 {
         width: 100%
     }
 }
 
-@media(max-width:500px) {
+@media(max-width:700px) {
     .ul1 {
         width: 50%
     }
 }
 
-@media(max-width:500px) {
+@media(max-width:700px) {
     .icon1 {
-        width: 33.33%
+        width: 33.33%;
     }
 }

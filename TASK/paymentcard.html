@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background: linear-gradient(to right, pink, blue);
+        }
+        
+        .main {
+            width: 1000px;
+            background: linear-gradient(to buttom, pink, blue);
+            margin: 10px auto;
+            border: 1px solid white;
+            border-radius: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header {
+            width: 1000px;
+            padding: 25px 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        span {
+            color: white;
+            text-align: left;
+        }
+        
+        .section {
+            width: 1000px;
+            display: flex;
+            z-index: 1;
+        }
+        
+        .sign {
+            background: none;
+            border: 1px solid white;
+            border-radius: 25px;
+            padding: 5px 10px;
+            color: white;
+            font-weight: bold;
+        }
+        
+        li {
+            display: inline;
+            padding-right: 30px;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .info {
+            width: 50%;
+            padding-bottom: 200px;
+        }
+        
+        .btn {
+            background: rgb(94, 94, 237);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+            margin-right: 20px;
+            color: white;
+        }
+        
+        .btn2 {
+            border: none;
+            background: none;
+            color: white;
+        }
+        
+        h6 {
+            color: greenyellow;
+            font-weight: bold;
+        }
+        
+        h1 {
+            font-size: 50px;
+        }
+        
+        .txt {
+            color: white;
+            padding-bottom: 20px;
+        }
+        
+        .link1 {
+            color: white;
+            display: inline;
+        }
+        
+        .size {
+            width: 400px;
+            padding-left: 100px;
+        }
+        
+        .info_image {
+            position: relative;
+            /* overflow: hidden; */
+        }
+        
+        .halfcircle {
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            border: 30px solid;
+            /* border-image: linear-gradient(pink, blue); */
+            /* border-image-slice: 1; */
+            position: absolute;
+            top: 5%;
+            left: -23%;
+            z-index: 3;
+        }
+        
+        .circle {
+            height: 700px;
+            width: 700px;
+            background: linear-gradient(-45deg, blue, coral);
+            position: absolute;
+            top: 12%;
+            left: 30%;
+            border-radius: 50%;
+            border-image: linear-gradient(pink, blue);
+            border-image-slice: 1;
+            z-index: 2;
+        }
+        
+        .circle1 {
+            height: 800px;
+            width: 800px;
+            border: 20px solid transparent;
+            background: linear-gradient(-45deg, blue, coral) padding-box, linear-gradient(to bottom, pink, blue) border-box;
+            position: absolute;
+            top: 0%;
+            left: 15%;
+            border-radius: 50%;
+            /* border-image: linear-gradient(pink, blue); */
+            /* border-image-slice: 1; */
+            z-index: 0;
+        }
+        
+        .circle2 {
+            height: 100px;
+            width: 100px;
+            /* background: pink; */
+            border: 30px solid purple;
+            position: absolute;
+            /* border-image: linear-gradient(pink, blue) border-box; */
+            border-radius: 50%;
+            /* border-image-slice: 1; */
+            top: 50%;
+            left: 60%;
+            z-index: 5;
+        }
+        
+        .circle3 {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background: linear-gradient(65deg, pink, purple);
+            position: absolute;
+            top: 60%;
+            left: 1%;
+            filter: blur(5px);
+            z-index: 0;
+        }
+        
+        .circle4 {
+            height: 70px;
+            width: 70px;
+            position: absolute;
+            top: 4%;
+            left: 30%;
+            /* background: linear-gradient(to top, blue, pink); */
+            border-radius: 50%;
+            border: 20px solid pink;
+        }
+        
+        .circle5 {
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            top: 20%;
+            left: 0%;
+            background: linear-gradient( purple, pink);
+            border-radius: 50%;
+        }
+        
+        .circle6 {
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            top: 60%;
+            left: -3%;
+            background: linear-gradient( purple, pink);
+            border-radius: 50%;
+        }
+        
+        .circle7 {
+            height: 80px;
+            width: 80px;
+            position: absolute;
+            top: 80%;
+            left: 40%;
+            border: 20px solid transparent;
+            background: linear-gradient(-45deg, blue, blue) padding-box, linear-gradient(to top, blue, white) border-box;
+            border-radius: 50%;
+        }
+        
+        .circle8 {
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            background: pink;
+            border-radius: 50%;
+            opacity: .6;
+        }
+        
+        .card {
+            height: 200px;
+            width: 350px;
+            border-radius: 10px;
+            background: url(backgroiund\ transparant.png);
+            border: 1px solid white;
+            position: absolute;
+            top: 15%;
+            left: 15%;
+            z-index: 6;
+            transform: rotate(20deg);
+            backdrop-filter: blur(10px);
+        }
+        
+        .head {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        
+        .visa {
+            opacity: .5;
+        }
+        
+        .number {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+        
+        .last {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            padding: 20px;
+            padding-top: 50px;
+        }
+        
+        .card2 {
+            width: 300px;
+            position: absolute;
+            top: 48%;
+            left: 7%;
+            transform: rotate(-10deg);
+            z-index: 4;
+        }
+        
+        .link {
+            position: absolute;
+            top: 90%;
+            left: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="header">
+            <span><i class="fa-solid fa-globe"></i> Cashfly</span>
+            <ul>
+                <li>About</li>
+                <li>Product</li>
+                <li>Pricing</li>
+                <button class="sign">Sign-up</button>
+            </ul>
+        </div>
+        <div class="section">
+
+            <div class="info info_text">
+                <div class="halfcircle"></div>
+                <div class="circle7"></div>
+                <div class="circle8"></div>
+                <div class="size">
+
+                    <h6><i class="fa-solid fa-sack-dollar" style="color: #d3d62e;"></i></i> Start Saving Your Money</h6>
+                    <h1 class="txt">Payments have never been easier</h1>
+                    <p class="txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi quis, maiores temporibus non, quas alias!</p>
+                    <button class="btn">Get Started</button>
+                    <button class="btn2">Downloag App  <i class="fa-solid fa-download" style="color: #ffffff;"></i></button>
+                    <div class="link">
+                        <p class="link1">Learn more about digital banking </p><a href="">here</a></div>
+                </div>
+            </div>
+            <div class="info info_image">
+                <div class="circle"></div>
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+                <div class="circle4"></div>
+                <div class="circle5"></div>
+                <div class="circle6"></div>
+                <div class="card">
+                    <div class="head">
+                        <p> <img src="chip.png" alt="" height="30px" width="30px"></p>
+                        <p><img class="visa" src="visa-removebg-preview.png" alt="" height="30px" width="100px"></p>
+                    </div>
+                    <p class="number">3516 8643 7614 9242</p>
+                    <div class="last">
+                        <p>
+                            <font size="1px" align="center">Card Holder</font> <br>Sarah Gold</p>
+                        <p>
+                            <font size="1px" align="center">Valid</font> <br>09/24</p>
+                    </div>
+                </div>
+                <div class="card card2">
+                    <div class="head">
+                        <p> <img src="chip.png" alt="" height="30px" width="30px"></p>
+                        <p><img class="visa" src="visa-removebg-preview.png" alt="" height="30px" width="100px"></p>
+                    </div>
+                    <p class="number">3516 8643 7614 9242</p>
+                    <div class="last">
+                        <p>
+                            <font size="1px" align="center">Card Holder</font> <br>Sarah Gold</p>
+                        <p>
+                            <font size="1px" align="center">Valid</font> <br>09/24</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
