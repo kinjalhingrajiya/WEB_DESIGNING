@@ -24,13 +24,14 @@
             top: 0;
             left: 0;
             z-index: -1;
-            animation: ani .3s infinite, ani2 10s infinite;
+            animation: ani .3s step(5, end) forwards;
             opacity: 0;
         }
         
         @keyframes ani {
             100% {
                 opacity: 1;
+                transform: translateX(12px);
             }
         }
         

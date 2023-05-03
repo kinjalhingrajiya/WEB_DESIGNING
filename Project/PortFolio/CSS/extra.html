@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav {
+            background: lightcoral;
+        }
+        
+        li {
+            display: inline;
+        }
+        
+        span {
+            display: none;
+        }
+        
+        .xyz {
+            display: block;
+        }
+        
+        @media(max-width:500px) {
+            span {
+                display: block;
+            }
+            ul {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav" id="nav">
+        <span id="bars" onclick="test()">menu</span>
+        <ul id="menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+        </ul>
+    </div>
+
+
+    <script>
+        sp = document.getElementById('bars');
+        ul = document.getElementById('menu');
+        nav_tag = document.getElementById('nav');
+
+        console.log(nav)
+        console.log(ul)
+        console.log(sp)
+
+        function test() {
+            ul.classList.toggle('xyz');
+        }
+    </script>
+
+</body>
+
+</html>

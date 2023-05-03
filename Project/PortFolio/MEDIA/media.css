@@ -1,0 +1,56 @@
+@media(max-width:500px) {
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .part1 {
+        border: none;
+    }
+    .part1 {
+        left: -100%;
+    }
+    .header {
+        left: -100%;
+    }
+    .bars {
+        display: block;
+    }
+    .name {
+        font-size: 50px;
+        margin-left: 30px;
+        padding-top: 80px;
+    }
+    .share {
+        margin: 30px 20%;
+    }
+    .about_me {
+        grid-template-columns: 1fr;
+        /* margin-left: 20px; */
+        text-align: center;
+    }
+    .aboutme_txt {
+        text-align: left;
+    }
+    .row {
+        grid-template-columns: 1fr;
+        /* margin-left: 20px; */
+    }
+    .progress {
+        margin: 20px 0;
+    }
+    .service {
+        font-size: 50px;
+    }
+    .subservice {
+        grid-template-columns: 1fr;
+    }
+    .circle {
+        left: -50%;
+    }
+    .subservice1:hover .circle {
+        transform: scale(3.6);
+    }
+    .portfolioimg {
+        grid-template-columns: 1fr;
+    }
+}
