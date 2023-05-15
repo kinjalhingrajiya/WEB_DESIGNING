@@ -44,7 +44,7 @@ body {
     border-radius: 50%;
     text-align: center;
     line-height: 50px;
-    z-index: 5;
+    z-index: 11;
     display: none;
 }
 
@@ -96,8 +96,13 @@ body {
     box-shadow: 0 0 5px #ccc;
 }
 
+a:hover {
+    color: rgb(108, 108, 246);
+}
+
 a {
     color: rgb(68, 66, 66);
+    font-weight: bold;
 }
 
 
@@ -109,6 +114,8 @@ a {
 .home {
     /* padding-left: 300px; */
     text-align: center;
+    margin-bottom: 100px;
+    ;
 }
 
 .name {
@@ -141,7 +148,9 @@ a {
     width: 250px;
     padding: 10px;
     border-radius: 10px;
-    margin: 50px 37%;
+    /* margin: 50px 37%; */
+    margin: auto;
+    /* margin-bottom: 100px; */
 }
 
 .f1 {
@@ -325,7 +334,7 @@ a {
 }
 
 .subservice1:hover .circle {
-    transform: scale(3.1);
+    transform: scale(3.2);
 }
 
 .servicepara {
@@ -422,15 +431,3 @@ footer {
 
 
 /* ---footer end--- */
-
-.brightness {
-    background: white;
-}
-
-.brightness {
-    background: black;
-}
-
-.hide {
-    left: 0;
-}

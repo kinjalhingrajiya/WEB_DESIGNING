@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head {
+    font-size: 30px;
+    color: maroon;
+    text-align: center;
+}
+
+.form {
+    background-color: gainsboro;
+    display: flex;
+    padding: 10px;
+}
+
+input {
+    display: block;
+    margin-bottom: 11px;
+    width: 100%;
+    padding: 5px;
+}
+
+select {
+    display: block;
+    margin-bottom: 11px;
+    /* width: 100%; */
+    padding: 5px;
+}
+
+span {
+    display: block;
+    padding-bottom: 23px;
+}
+
+.gender {
+    display: inline;
+    width: 30px;
+    padding-bottom: 10px;
+}
+
+.address {
+    margin-bottom: 35px;
+}
+
+.check {
+    display: inline;
+    margin: 0px;
+    width: 10px;
+}
+
+.c1 {
+    margin-bottom: 10px;
+}
+
+.checkbox {
+    margin-bottom: 50px;
+}
+
+.label {
+    width: 200px;
+}
+
+.input {
+    width: 500px;
+}
+
+.btn {
+    /* padding: 5px 10px; */
+    background-color: green;
+    color: white;
+    margin-left: 10px;
+    border: none;
+    width: 100px;
+}

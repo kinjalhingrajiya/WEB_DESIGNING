@@ -380,6 +380,49 @@
     margin-top: 0;
 }
 
+.content1::before {
+    content: "";
+    position: absolute;
+    width: 45%;
+    height: 2px;
+    top: 50%;
+    background: #fff;
+    left: 50%;
+    transform-origin: 0 50%;
+    display: block;
+    opacity: 0;
+    z-index: 2;
+    transform: rotate(-45deg);
+    transition: opacity .2s ease, transform 0s .2s;
+}
+
+.content1::after {
+    content: "";
+    position: absolute;
+    width: 45%;
+    height: 2px;
+    top: 50%;
+    background: #fff;
+    right: 50%;
+    transform-origin: 100% 50%;
+    display: block;
+    opacity: 0;
+    z-index: 2;
+    /* -webkit-transform: rotate(-45deg); */
+    transform: rotate(-45deg);
+    transition: opacity .2s ease, transform 0s .2s;
+}
+
+.content1:hover::after {
+    opacity: 1;
+    background-color: transparent;
+}
+
+.content1:hover::before {
+    opacity: 1;
+    background-color: transparent;
+}
+
 .skin {
     position: absolute;
     top: 80%;
@@ -427,6 +470,49 @@
 
 .content4 {
     margin-right: 10px;
+    position: relative;
+}
+
+.content4::before {
+    content: "";
+    position: absolute;
+    width: 45%;
+    height: 2px;
+    top: 50%;
+    background: #fff;
+    left: 50%;
+    transform-origin: 0 50%;
+    display: block;
+    opacity: 0;
+    z-index: 2;
+    transform: rotate(-45deg);
+    transition: opacity .2s ease, transform 0s .2s;
+}
+
+.content4::after {
+    content: "";
+    position: absolute;
+    width: 45%;
+    height: 2px;
+    top: 50%;
+    background: #fff;
+    right: 50%;
+    transform-origin: 100% 50%;
+    display: block;
+    opacity: 0;
+    z-index: 2;
+    transform: rotate(-45deg);
+    transition: opacity .2s ease, transform 0s .2s;
+}
+
+.content4:hover::after {
+    opacity: 1;
+    background-color: transparent;
+}
+
+.content4:hover::before {
+    opacity: 1;
+    background-color: transparent;
 }
 
 .content3 {
@@ -455,6 +541,7 @@
 }
 
 .c6 {
+    position: relative;
     height: 300px;
     background: url(../IMAGES/banner-17.jpg);
     background-size: 100% 100%;
@@ -462,7 +549,50 @@
     transition: 2s;
     margin-right: 10px;
     margin: 10px;
+    margin-bottom: 10px;
     /* margin-left: 10px; */
+}
+
+.c6::before {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    top: 50%;
+    background: #fff;
+    left: 50%;
+    transform-origin: 0 50%;
+    display: block;
+    opacity: 0;
+    z-index: 2;
+    transform: rotate(-45deg);
+    transition: opacity .2s ease, transform 0s .2s;
+}
+
+.c6::after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    top: 50%;
+    background: #fff;
+    right: 50%;
+    transform-origin: 100% 50%;
+    display: block;
+    opacity: 0;
+    z-index: 2;
+    transform: rotate(-45deg);
+    transition: opacity .2s ease, transform 0s .2s;
+}
+
+.c6:hover::after {
+    background-color: transparent;
+    opacity: 1;
+}
+
+.c6:hover::before {
+    background-color: transparent;
+    opacity: 1;
 }
 
 .skin:hover {

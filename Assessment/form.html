@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="head">Student Registration Form</div>
+    <div class="form">
+
+        <div class="label">
+            <span>First Name: </span>
+            <span> Last Name: </span>
+            <span> Email:</span>
+            <span> Mobile:</span>
+            <span> Gender:</span>
+            <span> Date Of Birth:</span>
+            <span class="address"> Address:</span>
+            <span> City:</span>
+            <span> Area PIN:</span>
+            <span> State:</span>
+            <span> Qualification:</span>
+            <span class="checkbox"> Specialization:</span>
+            <span>password :</span>
+            <!-- <form>
+
+            </form> -->
+        </div>
+
+        <div class="input">
+            <form>
+                <input type="text" placeholder="Enter your First name" required pattern="[a-zA-Z]{3,5}" title="min 3 and max 5 letters...!">
+                <input type="text" placeholder="Enter your Last name" required pattern="[a-zA-Z]{3,5}" title="min 3 and max 5 letters...!">
+                <input type="email" placeholder="it should contain @">
+                <input type="text" placeholder="Only 10 digits are allowed" required pattern="[0-9]{10}" title="10 digits  only...!" maxlength="10">
+                <input type="radio" name="gender" class="gender">Male
+                <input type="radio" name="gender" class="gender">Female
+                <input type="date">
+                <textarea name="" id="" cols="66" rows="5" required></textarea>
+                <input type="text" required>
+                <input type="number" name="" id="" required>
+                <input type="text" required>
+                <select required>
+            <option hidden> --- Select Qualification --- </option>
+            <option> MCA </option>
+            <option selected> MBA </option>
+            <option> CA </option>
+            <option> BCA </option>
+        </select>
+                <br>
+                <input type="checkbox" class="check"> Computer Science<br>
+                <input type="checkbox" class="check"> Information Technology<br>
+                <input type="checkbox" class="check"> Computer Architecture<br>
+                <input type="checkbox" class="check c1"> Tele Communication
+                <input type="password" name="" id="">
+                <input type="submit" value="Registered" class="btn">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

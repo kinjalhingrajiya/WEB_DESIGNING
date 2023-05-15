@@ -10,12 +10,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="MEDIA/media.css">
+
+    <style>
+
+    </style>
 </head>
 
 <body id="body1">
-    <div class="bars" id="bars" onclick="menu()"><i class="fa-solid fa-bars"></i>
+    <div class="bars" id="bars" onclick="menu1()"><i class="fa-solid fa-bars"></i>
     </div>
     <div class="button" id="btn" onclick="bodycolor()"><i class="fa-solid fa-moon"></i></div>
+    <!-- <div class="button" id="btn" onmouseenter="bodycolor()" onmouseleave="bodycolor1()"><i class="fa-solid fa-moon"></i></div> -->
     <!-- ---header start--- -->
     <div class="part1" id="part1">
         <header class="header" id="header">
@@ -46,7 +51,7 @@
                 <a href="https://www.facebook.com/kinjal.sutariya.54/" target="_blank"><i class="fa-brands fa-facebook-f f1"></i></a>
                 <a href="https://www.instagram.com/kinjal11sutariya3694/" target="_blank"><i class="fa-brands fa-instagram f1"></i></a>
                 <a href="https://www.linkedin.com/in/" target="_blank"> <i class="fa-brands fa-linkedin f1"></i></a>
-                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter f1"></i></a>
+                <a href="https://github.com/kinjalhingrajiya" target="_blank"><i class="fa-brands fa-square-github f1"></i></i></a>
             </div>
         </div>
         <!-- --home end--- -->
@@ -171,11 +176,11 @@
             <h1 class="service">MY</h1><span class="service s1"> PORTFOLIO</span>
             <div class="portfolioimg">
                 <div class="portimg1">
-                    <a href=""><img src="IMAGES/project1.png" alt="" height="200px" width="100%"></a>
+                    <a href=""><img src="IMAGES/project2.png" alt="" height="200px" width="100%"></a>
                     <div class="portback">PROJECT 01</div>
                 </div>
                 <div class="portimg1">
-                    <a href=""><img src="IMAGES/project2.png" alt="" height="200px" width="100%"></a>
+                    <a href=""><img src="IMAGES/project1.png" alt="" height="200px" width="100%"></a>
                     <div class="portback">PROJECT 02</div>
                 </div>
                 <div class="portimg1">
@@ -202,37 +207,7 @@
             <p class="foot">Created By Miss. <span class="nm">Kinjal Sutarsandhiya</span> | All Rights Reserved</p>
         </footer>
     </div>
-    <script>
-        body_tag = document.getElementById('body1');
-        header_tag = document.getElementById('header');
-
-        function bodycolor() {
-
-            if (body_tag.style.background = "white") {
-
-                body_tag.style.background = "black";
-                body_tag.style.color = "white";
-                header.style.background = "black";
-
-            } else if (body_tag.style.background = "black") {
-                body_tag.style.background = "white";
-            }
-            // } else if (body_tag.style.background = "black") {
-            //     body_tag = document.getElementById('body1');
-            //     body_tag.style.background = "white";
-            // }
-
-        }
-
-        function menu() {
-            if (header.style.left = "-100%") {
-                header.style.left = "0";
-                // header.style.background = "black";
-            } else {
-                header.style.left = "-100%";
-            }
-        }
-    </script>
+    <script src="JS/script.js"></script>
 </body>
 
 </html>
