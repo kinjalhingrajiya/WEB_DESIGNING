@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: rgb(4, 239, 138);
+        }
+        
+        .main {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* border: 2px solid; */
+            width: 600px;
+            margin: auto;
+            margin-top: 50px;
+            padding: 50px 10px;
+            position: relative;
+            background-color: white;
+        }
+        
+        .img {
+            background-color: greenyellow;
+            /* border: 2px solid; */
+            position: relative;
+            font-size: 20px;
+        }
+        
+        .fa-regular {
+            padding-left: 255px;
+        }
+        
+        .part1 {
+            display: grid;
+            grid-template-rows: 300px 80px;
+            width: 300px;
+            position: absolute;
+            top: 30px;
+            left: -50px;
+            box-shadow: 0 0 2px #ccc;
+        }
+        
+        .min {
+            padding: 5px;
+            border: 1px solid;
+            margin: 5px 2px;
+        }
+        
+        .many {
+            background-color: white;
+            text-align: center;
+        }
+        
+        .gray {
+            color: grey;
+            font-size: 12px;
+            margin: 10px 0;
+        }
+        
+        .red {
+            color: red;
+            font-size: 40px;
+        }
+        
+        .big {
+            position: absolute;
+            top: 0px;
+            left: -60px;
+        }
+        
+        .cart {
+            padding: 10px 20px;
+            color: white;
+            font-weight: bold;
+            background-color: red;
+            margin-top: 10px;
+            box-shadow: 0 0 10px #ccc;
+            border: none;
+            border-radius: 5px;
+        }
+        
+        .outer {
+            position: relative;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .main {
+                grid-template-columns: 1fr;
+                width: 300px;
+            }
+            .part1 {
+                Top: 100%;
+                left: 0;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div></div>
+        <div>
+            <h1>Delicious Apples</h1>
+            <p class="gray">Coo 45999</p>
+            <p class="red"><span style="color:red; font-size: 18px;">R$.</span> 7.93</p>
+            <p>select color</p>
+            <img src="1.-removebg-preview.png" alt="" height="50px" width="50px">
+            <img src="yellowapple-removebg-preview.png" alt="" height="50px" width="50px">
+            <img src="red_whiteapple-removebg-preview.png" alt="" height="50px" width="50px">
+            <img src="red_apple-removebg-preview.png" alt="" height="50px" width="50px">
+            <p class="gray">BENEFITS</p>
+            <ul>
+                <li>Apples Are Untricious</li>
+                <li>Apples may be good for weight loss</li>
+                <li>Apples may be good for bone health</li>
+                <li>They're linked to a lowest risk of diabetes</li>
+            </ul>
+
+            <button class="cart">Add to Cart</button>
+        </div>
+        <div class="part1">
+            <div class="img">
+                <i class="fa-solid fa-share-nodes" style="color: #f9fafb;"></i>
+                <i class="fa-regular fa-heart" style="color: #f6f7f8;"></i>
+                <img src="green_apple_image-removebg-preview.png" alt="" height="300px" width="300px" class="big">
+            </div>
+
+            <div class="many">
+                <img src="1.-removebg-preview.png" alt="" height="50px" width="50px" class="min">
+                <img src="yellowapple-removebg-preview.png" height="50px" width="50px" class="min">
+                <img src="red_whiteapple-removebg-preview.png" height="50px" width="50px" class="min">
+                <img src="red_apple-removebg-preview.png" height="50px" width="50px" class="min">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
