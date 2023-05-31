@@ -1,0 +1,59 @@
+@media(max-width:700px) {
+    .logo {
+        width: 50%;
+        text-align: center;
+    }
+    .navhome {
+        display: none;
+    }
+    .bar {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media(max-width:700px) {
+    .part2 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media(max-width:700px) {
+    .product1 {
+        width: 50%
+    }
+}
+
+@media(max-width:700px) {
+    .pro1 {
+        width: 100%
+    }
+}
+
+@media(max-width:700px) {
+    .part3img {
+        width: 100%;
+    }
+    .part3info {
+        width: 100%;
+    }
+}
+
+@media(max-width:700px) {
+    .product2 {
+        width: 100%
+    }
+}
+
+@media(max-width:700px) {
+    .ul1 {
+        width: 50%
+    }
+}
+
+@media(max-width:700px) {
+    .icon1 {
+        width: 33.33%;
+    }
+}
