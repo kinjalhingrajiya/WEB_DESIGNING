@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restorent Booking formt</title>
+</head>
+
+<body>
+    <h1>Restorent Booking form</h1>
+    <form action="">
+        <label for="">Choice of Booking :</label>
+        <select name="" id="choice" onchange="showoption()">
+    <option value="fullday">Full Day Booking</option>
+    <option value="halfday">Half Day Booking</option>
+    <option value="hourly">Hourly Booking</option>
+ </select>
+        <br><br>
+        <label for="">User Name :</label>
+        <input type="text" required>
+        <br><br>
+        <label for="">mobileNumber</label>
+        <input type="text" maxlength="10" required>
+        <br><br>
+        <label for="">Email :</label>
+        <input type="email" requitred>
+        <br><br>
+        <label for="">Number of Persons :</label>
+        <input type="number" required>
+        <br><br>
+        <label for="">Date :</label>
+        <input type="date" required>
+        <br><br>
+        <div id="optionslot"></div>
+        <br><br>
+        <input type="submit" value="Submit">
+
+    </form>
+    <script>
+        function showoption() {
+            const choice_book = document.getElementById("choice").value;
+            const option_slot = document.querySelector("#optionslot");
+            option_slot.innnerHTML = "";
+
+            if (choice_book == "fullday") {
+                const date_slot = document.createElement("input");
+                date_slot.id = "fullDayDate";
+                date_slot.type = "date";
+                date_slot.required = true;
+                option_slot.appendChild(date_slot);
+            } else if (choice_book == "halfday") {
+                const date_slot = document.createElement("input");
+                date_slot.type = "date";
+                date_slot.id = "halfDayDate";
+                date_slot.required = true;
+                option_slot.appendChild(date_slot);
+                const select_bld = document.createElement("select");
+                select_bld.required = true;
+                option_time = ["Breakfast", "Lunch", "Dinner"];
+                for (i = 0; i < option_time.length; i++) {
+                    const option_book = document.createElement("option");
+                    option_book.value = option_time[i];
+                    option_book.text = option_time[i];
+                    select_bld.appendChild(option_book);
+                }
+                option_slot.appendChild(select_bld);
+            } else if (choice_book == "hourly") {
+                const date_slot = document.createElement("input");
+                date_slot.id = "hourlyday";
+                date_slot.type = "date";
+                date_slot.required = true;
+                option_slot.appendChild(date_slot);
+                const select_time = document.createElement("input")
+                select_time.type = "time";
+                select_time.required = true;
+                option_slot.appendChild(select_time);
+            }
+
+        }
+    </script>
+</body>
+
+
+
+</html>
