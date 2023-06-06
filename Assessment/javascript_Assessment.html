@@ -12,7 +12,7 @@
     <h1>Restorent Booking form</h1>
     <form action="">
         <label for="">Choice of Booking :</label>
-        <select name="" id="choice" onchange="showoption()">
+        <select name="" id="choice" onclick="showoption()">
     <option value="fullday">Full Day Booking</option>
     <option value="halfday">Half Day Booking</option>
     <option value="hourly">Hourly Booking</option>
@@ -28,10 +28,6 @@
         <input type="email" requitred>
         <br><br>
         <label for="">Number of Persons :</label>
-        <input type="number" required>
-        <br><br>
-        <label for="">Date :</label>
-        <input type="date" required>
         <br><br>
         <div id="optionslot"></div>
         <br><br>
@@ -45,12 +41,18 @@
             option_slot.innerHTML = "";
 
             if (choice_book == "fullday") {
+                label_date = document.createElement("label");
+                label_date.innerHTML = "Date:"
+                option_slot.appendChild(label_date);
                 const date_slot = document.createElement("input");
                 date_slot.id = "fullDayDate";
                 date_slot.type = "date";
                 date_slot.required = true;
                 option_slot.appendChild(date_slot);
             } else if (choice_book == "halfday") {
+                label_date = document.createElement("label");
+                label_date.innerHTML = "Date:"
+                option_slot.appendChild(label_date);
                 const date_slot = document.createElement("input");
                 date_slot.type = "date";
                 date_slot.id = "halfDayDate";
@@ -67,11 +69,17 @@
                 }
                 option_slot.appendChild(select_bld);
             } else if (choice_book == "hourly") {
+                label_date = document.createElement("label");
+                label_date.innerHTML = "Date:"
+                option_slot.appendChild(label_date);
                 const date_slot = document.createElement("input");
                 date_slot.id = "hourlyday";
                 date_slot.type = "date";
                 date_slot.required = true;
                 option_slot.appendChild(date_slot);
+                time_label = document.createElement("label");
+                time_label.innerHTML = "Time:";
+                option_slot.appendChild(time_label);
                 const select_time = document.createElement("input")
                 select_time.type = "time";
                 select_time.required = true;
