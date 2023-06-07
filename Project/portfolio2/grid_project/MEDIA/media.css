@@ -1,4 +1,4 @@
-@media(max-width:500px) {
+@media(max-width:600px) {
     .bar {
         display: block;
         padding: 0px;
@@ -14,6 +14,10 @@
         text-align: center;
         align-items: center;
     }
+    .slider3 {
+        font-size: 30px;
+        width: 300px;
+    }
     .content {
         grid-template-columns: 1fr;
     }
@@ -21,7 +25,7 @@
         grid-template-columns: 1fr;
     }
     .off {
-        left: 18%;
+        left: 26%;
     }
     .content4 {
         margin-bottom: 30px;
@@ -35,7 +39,16 @@
         grid-template-columns: 1fr;
     }
     .back {
-        left: 20%;
+        left: 22%;
+    }
+    .body {
+        left: 40%;
+    }
+    .acce {
+        left: 40%;
+    }
+    .skin {
+        left: 40%;
     }
     .content4 {
         grid-template-columns: 1fr;

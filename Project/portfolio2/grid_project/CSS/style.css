@@ -438,7 +438,7 @@
 
 .hair {
     position: absolute;
-    top: 90%;
+    top: 80%;
     left: 50%;
 }
 
@@ -671,9 +671,9 @@
     padding: 8px 20px;
     background-color: #2e4839;
     color: white;
-    top: 0%;
-    left: 0%;
-    margin: 20px 30px;
+    top: 2%;
+    left: 12%;
+    /* margin: 20px 30px; */
     border-radius: 5px;
     font-weight: bold;
     z-index: 2;
@@ -682,11 +682,11 @@
 .back {
     position: absolute;
     top: 0;
-    left: 18px;
+    left: 11%;
     opacity: 0;
-    text-align: center;
     transition: 1s;
     /* border: 2px solid; */
+    margin: auto;
 }
 
 .propart:hover .back {

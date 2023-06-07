@@ -24,9 +24,10 @@ function bodycolor() {
 function menu1() {
     // header_tag.classList.add('menuright');
 
-
+    // header_tag.style.display = "block"
     if (toggle2 == 1) {
         header_tag.style.left = "0px";
+        header_tag.style.display = "block"
         toggle2--;
     } else if (toggle2 == 0) {
         header_tag.style.left = "-300px";

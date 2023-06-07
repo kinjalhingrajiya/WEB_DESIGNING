@@ -9,11 +9,12 @@
     /* .part1 {
         left: -300px;
     } */
-    .header {
-        left: -300px;
-    }
     .bars {
         display: block;
+    }
+    .header {
+        left: -300px;
+        display: none;
     }
     .name {
         font-size: 50px;
