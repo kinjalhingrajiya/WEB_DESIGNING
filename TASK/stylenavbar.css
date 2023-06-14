@@ -20,26 +20,8 @@
      padding: 10px;
  }
  
- .home {
-     height: 5px;
-     width: 0;
-     background: lightblue;
-     position: absolute;
-     top: 100%;
-     left: 0;
-     transition: 1s;
- }
- 
- .about {
-     height: 5px;
-     width: 0;
-     background: lightblue;
-     position: absolute;
-     top: 100%;
-     left: 0;
-     transition: 1s;
- }
- 
+ .home,
+ .about,
  .contact {
      height: 5px;
      width: 0;
@@ -51,13 +33,13 @@
  }
  
  li:hover .home {
-     width: 50px;
+     width: 100%;
  }
  
  li:hover .about {
-     width: 50px;
+     width: 100%;
  }
  
  li:hover .contact {
-     width: 90px;
+     width: 100%;
  }

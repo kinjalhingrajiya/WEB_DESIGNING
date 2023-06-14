@@ -1,0 +1,85 @@
+@media(max-width:700px) {
+    .part1 {
+        width: 100%;
+        text-align: center;
+    }
+    .part2 {
+        width: 100%;
+    }
+    .search {
+        width: 450px;
+    }
+    .part3 {
+        width: 40%;
+    }
+    .bar {
+        display: block;
+        /* text-align: center; */
+    }
+    .icon {
+        width: 60%;
+    }
+    .navbar {
+        display: none;
+    }
+    .slidertxt {
+        top: 5%;
+        left: 0;
+    }
+    .imgtree {
+        width: 400px;
+    }
+    .content1 {
+        width: 100%;
+    }
+    .text {
+        font-size: 16px;
+    }
+    .product {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .content11 {
+        width: 100%;
+    }
+    .t_shirt1 {
+        width: 100%;
+    }
+    .newsp1 {
+        width: 100%;
+        margin: 10px;
+    }
+    .farmer1 {
+        width: 100%;
+    }
+    .desc1 {
+        width: 100%;
+    }
+    .d1 {
+        display: none;
+    }
+    .fa1 {
+        display: none;
+    }
+    .data1 {
+        width: 100%;
+    }
+    .data2 {
+        width: 100%;
+        padding-left: 60px;
+        /* flex-wrap: wrap; */
+    }
+    .png1 {
+        display: none;
+    }
+    .place {
+        width: 100%;
+        padding: 30px;
+        /* text-align: center; */
+        /* top: 0;
+        left: 0; */
+    }
+    .foot1 {
+        width: 100%;
+    }
+}
