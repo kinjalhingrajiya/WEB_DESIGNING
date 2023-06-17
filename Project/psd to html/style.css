@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    transition: 1s;
+}
+
+.first {
+    background-color: rgb(61, 95, 0);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.f1 {
+    padding-left: 200px;
+    color: white;
+    /* float: center; */
+}
+
+.inp {
+    padding: 15px;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+ ::placeholder {
+    color: white;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(61, 95, 0);
+    font-size: 20px;
+}
+
+nav {
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+.slider {
+    /* margin-top: 10px; */
+    background: url(slide\ bg.png);
+    background-size: 100% 100%;
+    display: grid;
+    grid-template-columns: 30fr 50fr;
+    color: rgb(61, 95, 0);
+    height: 500px;
+}
+
+.p1 {
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 50px;
+    padding-top: 50px;
+    color: rgb(61, 95, 0);
+}
+
+.p2 {
+    font-size: 25px;
+    margin-left: 50px;
+    border-bottom: 2px solid rgb(61, 95, 0);
+    display: inline-block;
+    width: 300px;
+}
+
+.p3 {
+    padding: 50px 10px;
+    font-size: 18px;
+    margin-left: 50px;
+}
+
+.button1 {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    font-size: 30px;
+    opacity: .6;
+    color: rgb(61, 95, 0);
+    z-index: 1;
+}
+
+.btn {
+    background-color: rgb(61, 95, 0);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px 0px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.btn1 {
+    margin-left: 10px;
+}
+
+.btn2 {
+    margin-left: 0;
+}
+
+.about {
+    font-size: 50px;
+    color: rgb(61, 95, 0);
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-shadow: -50px 5px rgba(61, 95, 0, 0.4);
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.abt {
+    text-align: center;
+}
+
+.p4 {
+    padding: 10px 10px;
+    font-size: 18px;
+    margin-left: 50px;
+    color: rgb(61, 95, 0);
+}
+
+.img {
+    padding: 50px;
+    /* margin: auto; */
+    position: relative;
+}
+
+.shape {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    height: 50px;
+    width: 50px;
+    z-index: 3;
+}
+
+.top {
+    background-color: rgba(150, 167, 116, 0.6);
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+}
+
+.fa-magnifying-glass {
+    padding: 15px;
+    /* background-color: white; */
+    color: white;
+    border: none;
+    /* border-bottom: 2px dotted white; */
+}
+
+.search {
+    width: 250px;
+    display: grid;
+    grid-template-columns: 10fr 10fr;
+    border-bottom: 2px dotted white;
+    margin-left: 10px;
+}
+
+.discount {
+    background: url(discount.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.discount2 {
+    background: url(sand\ bg.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 0;
+}
+
+.s {
+    color: rgb(61, 95, 0);
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.sale {
+    color: rgb(61, 95, 0);
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.space {
+    color: rgb(61, 95, 0);
+    letter-spacing: 5px;
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.para {
+    color: rgb(61, 95, 0);
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.disc1 {
+    padding: 30px 50px;
+}
+
+.price_main {
+    display: grid;
+    grid-template-columns: 100fr 100fr 100fr;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 100px;
+}
+
+.price_main1 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    margin-top: 30px;
+    margin: 20px;
+}
+
+.price_main2 {
+    text-align: center;
+    background-color: rgb(241, 241, 241);
+}
+
+.m2 {
+    background-color: rgb(96, 139, 20);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.menu {
+    color: rgb(61, 95, 0);
+    padding: 10px;
+}
+
+.blog1 {
+    display: grid;
+    grid-template-columns: 100fr 100fr 100fr;
+    margin: 0 100px;
+    padding-top: 30px;
+}
+
+.blog_inner {
+    padding: 20px;
+}
+
+.fa-brands {
+    padding: 5px;
+    color: rgb(61, 95, 0);
+    background-color: white;
+    border-radius: 50%;
+}
+
+.footer {
+    background-color: rgb(96, 139, 20);
+    text-align: center;
+    color: white;
+}
