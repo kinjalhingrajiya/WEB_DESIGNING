@@ -1,6 +1,6 @@
 body_tag = document.getElementById('body1');
 header_tag = document.getElementById('header');
-
+button_dark = document.getElementById('btn');
 toggle2 = 1;
 
 function bodycolor() {
@@ -32,5 +32,8 @@ function menu1() {
     } else if (toggle2 == 0) {
         header_tag.style.left = "-300px";
         toggle2++;
+    } else {
+        header_tag.style.left = "0px";
+        header_tag.style.display = "block"
     }
 }
