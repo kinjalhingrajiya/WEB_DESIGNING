@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Open Sans !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.menu1 {
+    position: relative;
+    z-index: 2;
+}
+
+.downimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.upperimg {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    z-index: 1;
+}
+
+
+/* slider start */
+
+.slider {
+    background: url(../images/slider\ bg.png);
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.lo {
+    letter-spacing: 5px;
+    color: #54524f;
+    font-size: 25px;
+}
+
+.hiking {
+    color: #deb37e;
+    font-size: 92px;
+    font-weight: bolder
+}
+
+.read {
+    color: #776c64;
+    /* font-size: 25px; */
+    font-weight: bold;
+}
+
+
+/* slider end */
+
+.let {
+    color: #e2a355;
+    font-size: 63px;
+    font-weight: bold;
+}
+
+.show1 {
+    background-color: #776c64 !important;
+    color: white !important;
+}
+
+.lets {
+    position: relative;
+}
+
+.shadow2 {
+    position: absolute;
+    top: 80%;
+    left: 0;
+    z-index: -3;
+}
+
+.disc {
+    background-color: #776c64 !important;
+}
+
+.disc2 {
+    background-color: rgb(222, 179, 126) !important;
+}
+
+.mountain {
+    padding: 200px 0;
+    background-color: #54524f;
+    text-align: center;
+}
+
+.exp {
+    text-align: right;
+    padding: 100px 0px;
+}
+
+.exp1 {
+    color: #e2a355;
+    padding-right: 100px;
+    font-size: 60px;
+}
+
+.exp2 {
+    color: #322c29;
+    padding-right: 100px;
+    font-size: 60px;
+}
+
+i {
+    color: #54524f !important;
+    /* font-size: 100px; */
+}
+
+footer {
+    background-color: #54524f;
+    padding: 10px;
+}

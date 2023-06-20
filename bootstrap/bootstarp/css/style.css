@@ -146,6 +146,12 @@
                  animation: anim2 2s;
              }
              
+             @media(max-width:992px) {
+                 .bisque::after {
+                     content: ".............................." "...........................";
+                 }
+             }
+             
              @media (max-width:992px) {
                  .oran {
                      background-color: orange;
