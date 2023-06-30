@@ -2,223 +2,527 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Kinjal Sutarsandhiya - PortFolio</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="MEDIA/media.css">
 
-    <style>
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    </style>
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
-<body id="body1">
-    <div class="bars" id="bars" onclick="menu1()"><i class="fa-solid fa-bars"></i>
-    </div>
-    <div class="button" id="btn" onclick="bodycolor()"><i class="fa-solid fa-moon"></i></div>
-    <!-- ---header start--- -->
-    <div class="part1" id="part1">
-        <header class="header" id="header">
-            <div class="user">
-                <img src="IMAGES/kinjapic.png" alt="" class="img">
-                <h5>Kinjal Sutarsandhiya</h5>
-                <p>MERN Stack Devloper</p>
-            </div>
-            <nav class="navbar">
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <a href="index.html"></a>
+
+            <nav id="navbar" class="navbar">
                 <ul>
-                    <li class="navbtn"> <a href="#home">home</a></li>
-                    <li class="navbtn"><a href="#about">about</a></li>
-                    <li class="navbtn"><a href="#services">services</a></li>
-                    <li class="navbtn"><a href="#portfolio">portfolio</a></li>
-                    <li class="navbtn"><a href="#contact">contact</a></li>
+                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#about">About</a></li>
+                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                    <li><a class="nav-link scrollto " href="#work">Work</a></li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
                 </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>
-        </header>
-    </div>
-    <!-- ---header end--- -->
-    <!-- ---home start--- -->
-    <div class="part2">
-        <div class="home" id="home">
-            <h1 class="name">KINJAL SUTARSANDHIYA</h1>
-            <h4 class="name2">I'm a Mern Stack Developer</h4>
-            <a href="resume.pdf" class="cv">Download CV</a>
-            <div class="share">
-                <a href="https://www.facebook.com/kinjal.sutariya.54/" target="_blank"><i class="fa-brands fa-facebook-f f1"></i></a>
-                <a href="https://www.instagram.com/kinjal11sutariya3694/" target="_blank"><i class="fa-brands fa-instagram f1"></i></a>
-                <a href="https://www.linkedin.com/in/kinjal-sutarsandhiya-40a692276/" target="_blank"> <i class="fa-brands fa-linkedin f1"></i></a>
-                <a href="https://github.com/kinjalhingrajiya" target="_blank"><i class="fa-brands fa-square-github f1"></i></i></a>
+            <!-- .navbar -->
+
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <div id="hero" class="hero route bg-image" style="background: url(assets/img/kinjal_image.png), black; background-repeat: no-repeat;">
+        <div class="overlay-itro"></div>
+        <div class="hero-content display-table">
+            <div class="table-cell">
+                <div class="container">
+                    <h1 class="hero-title mb-4">I am Kinjal Sutarsandhiya</h1>
+                    <p class="hero-subtitle"><span class="typed" data-typed-items="Web Designer,Web Developer, Freelancer"></span></p>
+                </div>
             </div>
         </div>
-        <!-- --home end--- -->
-        <!-- ---about start---- -->
-        <section class="about" id="about">
-            <h1 class="service">ABOUT</h1><span class="service s1"> ME</span>
-            <div class="about_me">
-                <div class="aboutme1">
-                    <div class="about1">
-                        <h1>4</h1>
-                        <p>Months Of Training </p>
-                    </div>
-                    <div class="about1">
-                        <h1>5</h1>
-                        <p>Months Of Experience </p>
-                    </div>
-                    <div class="about1">
-                        <h1>190+</h1>
-                        <p>Working Hours </p>
-                    </div>
-                    <div class="about1">
-                        <h1>4+</h1>
-                        <p>Projects Completed</p>
-                    </div>
-                </div>
-
-                <div class="aboutme_txt">
-                    <h1 class="txt"> My Name Is</h1> <span class="txt mename">Kinjal Sutarsanshiya</span>
-
-                    <p class="para">I Have Completed Bachlor Of Computer Apllication. I Have 5 Months Experience Of frontend developer As Internship Trainee.</p>
-                    <a href="#contact" class="btn">contact me</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="row1">
-                    <div CLASS="progress">
-                        <h3 class="sub">WEB DESIGN<span>100%</span></h3>
-                        <div class="bar bar1">
-                            <span></span></div>
-                    </div>
-                    <div CLASS="progress">
-                        <h3 class="sub">HTML<span>90%</span></h3>
-                        <div class="bar">
-                            <div class="bar2"></div>
-                        </div>
-                    </div>
-                    <div CLASS="progress">
-                        <h3 class="sub">CSS<span>90%</span></h3>
-                        <div class="bar">
-                            <div class="bar2"></div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="row1">
-                    <div CLASS="progress">
-                        <h3 class="sub">JAVA SCRIPT<span>70%</span></h3>
-                        <div class="bar">
-                            <div class="bar2 bar3"></div>
-                        </div>
-                    </div>
-                    <div CLASS="progress">
-                        <h3 class="sub">JQUERY<span>70%</span></h3>
-                        <div class="bar">
-                            <div class="bar2 bar3"></div>
-                        </div>
-                    </div>
-                    <div CLASS="progress">
-                        <h3 class="sub">BOOTSTRAP<span>90%</span></h3>
-                        <div class="bar">
-                            <div class="bar2"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- /* ---about end--- */ -->
-        <!-- /* ---services start--- */ -->
-        <section class="services" id="services">
-            <h1 class="service">MY</h1><span class="service s1"> SERVICES</span>
-            <div class="subservice">
-                <div class="subservice1">
-                    <h2 class="web">Web Design</h2>
-                    <p class="servicepara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi sunt quidem quia perspiciatis doloremque inventore similique perferendis ipsa quos est? Eum asperiores voluptatem quasi ea adipisci, eligendi a unde facere?</p>
-                    <div class="circle"></div>
-                    <i class="fa-solid fa-code code1"></i>
-                </div>
-                <div class="subservice1">
-                    <h2 class="web">Responsive Design</h2>
-                    <p class="servicepara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi sunt quidem quia perspiciatis doloremque inventore similique perferendis ipsa quos est? Eum asperiores voluptatem quasi ea adipisci, eligendi a unde facere?</p>
-                    <div class="circle"></div>
-                    <i class="fa-solid fa-mobile code1"></i>
-                </div>
-                <div class="subservice1">
-                    <h2 class="web">Web Design</h2>
-                    <p class="servicepara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi sunt quidem quia perspiciatis doloremque inventore similique perferendis ipsa quos est? Eum asperiores voluptatem quasi ea adipisci, eligendi a unde facere?</p>
-                    <div class="circle"></div>
-                    <i class="fa-solid fa-paintbrush code1"></i>
-                </div>
-                <div class="subservice1">
-                    <h2 class="web">Responsive Design</h2>
-                    <p class="servicepara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi sunt quidem quia perspiciatis doloremque inventore similique perferendis ipsa quos est? Eum asperiores voluptatem quasi ea adipisci, eligendi a unde facere?</p>
-                    <div class="circle"></div>
-                    <i class="fa-solid fa-palette code1"></i></i>
-                </div>
-                <div class="subservice1">
-                    <h2 class="web">Web Design</h2>
-                    <p class="servicepara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi sunt quidem quia perspiciatis doloremque inventore similique perferendis ipsa quos est? Eum asperiores voluptatem quasi ea adipisci, eligendi a unde facere?</p>
-                    <div class="circle"></div>
-                    <i class="fa-solid fa-magnifying-glass code1"></i>
-                </div>
-                <div class="subservice1">
-                    <h2 class="web">Responsive Design</h2>
-                    <p class="servicepara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi sunt quidem quia perspiciatis doloremque inventore similique perferendis ipsa quos est? Eum asperiores voluptatem quasi ea adipisci, eligendi a unde facere?</p>
-                    <div class="circle"></div>
-                    <i class="fa-solid fa-pen-nib code1"></i>
-                </div>
-            </div>
-        </section>
-        <!-- ---PORTFOLIO START--- -->
-        <section class="portfolio" id="portfolio">
-            <h1 class="service">MY</h1><span class="service s1"> PORTFOLIO</span>
-            <div class="portfolioimg">
-                <div class="portimg1">
-                    <img src="IMAGES/project2.png" alt="" height="200px" width="100%">
-                    <a href="grid_project/index.html">
-                        <div class="portback">PROJECT 01</div>
-                    </a>
-                </div>
-                <div class="portimg1">
-                    <img src="IMAGES/project1.png" alt="" height="200px" width="100%">
-                    <a href="flex_project/index.html">
-                        <div class="portback">PROJECT 02</div>
-                    </a>
-                </div>
-                <div class="portimg1">
-                    <img src="IMAGES/project3.png" alt="" height="200px" width="100%">
-                    <a href="flex_layout/index.html">
-                        <div class="portback">PROJECT 03</div>
-                    </a>
-                </div>
-                <div class="portimg1">
-                    <img src="IMAGES/project4.png" alt="" height="200px" width="100%">
-                    <a href="bootstarp/index.html">
-                        <div class="portback">PROJECT 04</div>
-                    </a>
-                </div>
-
-            </div>
-        </section>
-        <!-- ---PORTFOLIO end--- -->
-        <!-- ---contact start--- -->
-        <section class="contact" id="contact">
-            <h1 class="service">CONTACT</h1><span class="service s1"> ME</span>
-            <form action="" class="contact_form">
-                <input type="text" placeholder="Your Name" class="cont_form">
-                <input type="text" placeholder="Your Email" class="cont_form">
-                <input type="text" placeholder="Subject" class="cont_form">
-                <textarea name="" id="" cols="23" rows="6" placeholder="Your Message" class="cont_form"></textarea>
-                <input type="submit" value="send message" class="btn">
-            </form>
-        </section>
-        <!-- ---contact start--- -->
-        <footer>
-            <p class="foot">Created By Miss. <span class="nm">Kinjal Sutarsandhiya</span> | All Rights Reserved</p>
-        </footer>
     </div>
-    <script src="JS/script.js"></script>
+    <!-- End Hero Section -->
+
+    <main id="main">
+
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about-mf sect-pt4 route">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="box-shadow-full">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-5">
+                                            <div class="about-img">
+                                                <img src="assets/img/kinjapic.png" class="img-fluid rounded b-shadow-a" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-7">
+                                            <div class="about-info">
+                                                <p><span class="title-s">Name: </span> <span>Kinjal Sutarsandhiya</span></p>
+                                                <p><span class="title-s">Profile: </span> <span>MERN stack developer</span></p>
+                                                <p><span class="title-s">Email: </span> <span>kinjal11sutariya@gmail.com</span></p>
+                                                <p><span class="title-s">Phone: </span> <span>9723297162</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-mf">
+                                        <p class="title-s">Skill</p>
+                                        <span>HTML/HTML5</span> <span class="pull-right">85%</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span>CSS3</span> <span class="pull-right">90%</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span>JAVASCRIPT</span> <span class="pull-right">80%</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span>J-Query</span> <span class="pull-right">90%</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span>Bootstrap</span> <span class="pull-right">90%</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="about-me pt-4 pt-md-0">
+                                        <div class="title-box-2">
+                                            <h5 class="title-left">
+                                                About me
+                                            </h5>
+                                        </div>
+                                        <p class="lead">
+                                            <li> To gain a dynamic and challenging role in the area of Development, Design, and Analysis of IT field that will offer be the best opportunity for further development of my abilities, skills and knowledge in an
+                                                established firm with long term career growth possibilities.
+                                            </li>
+                                            <li> I Have Completed Bachlor Of Computer Apllication. I Have 5 Months Experience Of Frontend Developer As Internship Trainee.</li>
+                                            <li> I Have 5 Years Experience Of Computer Teacher in Ashadeep International school at surat.</li>
+                                        </p>
+                                        <button type="submit" class="button button-a button-big button-rouded"> <a href="resume.pdf" class="cv">Download CV</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About Section -->
+
+        <!-- ======= Services Section ======= -->
+        <section id="services" class="services-mf pt-5 route">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="title-box text-center">
+                            <h3 class="title-a">
+                                Services
+                            </h3>
+                            <div class="line-mf"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="service-box">
+                            <div class="service-ico">
+                                <span class="ico-circle"><i class="bi bi-briefcase"></i></span>
+                            </div>
+                            <div class="service-content">
+                                <h2 class="s-title">Web Design</h2>
+                                <p class="s-description text-center">
+                                    A web design service provides you with a customized website design that's perfect for your business or personal site.They'll work with you to create a design that matches your brand, while giving your customers a seamless user experience that will delight
+                                    them.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-box">
+                            <div class="service-ico">
+                                <span class="ico-circle"><i class="bi bi-card-checklist"></i></span>
+                            </div>
+                            <div class="service-content">
+                                <h2 class="s-title">Web Development</h2>
+                                <p class="s-description text-center">
+                                    Web development refers in general to the tasks associated with developing websites for hosting via intranet or internet. The web development process includes web design, web content development, client-side/server-side scripting and network security configuration,
+                                    among other tasks. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-box">
+                            <div class="service-ico">
+                                <span class="ico-circle"><i class="bi bi-binoculars"></i></span>
+                            </div>
+                            <div class="service-content">
+                                <h2 class="s-title">Responsive Design</h2>
+                                <p class="s-description text-center">
+                                    Responsive design is an approach to web design in which the interface adapts to the device's layout, facilitating usability, navigation and information seeking. Responsiveness is possible thanks to media queries, allowing the design to adjust automatically
+                                    to the browser.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Services Section -->
+
+        <!-- ======= Counter Section ======= -->
+        <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
+            <div class="overlay-mf"></div>
+            <div class="container position-relative">
+                <div class="row">
+                    <div class="col-sm-3 col-lg-3">
+                        <div class="counter-box counter-box pt-4 pt-md-0">
+                            <div class="counter-ico">
+                                <span class="ico-circle"><i class="bi bi-check"></i></span>
+                            </div>
+                            <div class="counter-num">
+                                <p data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="counter purecounter"></p>
+                                <span class="counter-text">Project Completed</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-lg-3">
+                        <div class="counter-box pt-4 pt-md-0">
+                            <div class="counter-ico">
+                                <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
+                            </div>
+                            <div class="counter-num">
+                                <p data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="counter purecounter"></p>
+                                <span class="counter-text">Months Of Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-lg-3">
+                        <div class="counter-box pt-4 pt-md-0">
+                            <div class="counter-ico">
+                                <span class="ico-circle"><i class="fa-solid fa-clock"></i></i></span>
+                            </div>
+                            <div class="counter-num">
+                                <p data-purecounter-start="0" data-purecounter-end="190" data-purecounter-duration="1" class="counter purecounter"></p>
+                                <span class="counter-text">Working Hours</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-lg-3">
+                        <div class="counter-box pt-4 pt-md-0">
+                            <div class="counter-ico">
+                                <span class="ico-circle"><i class="bi bi-award"></i></span>
+                            </div>
+                            <div class="counter-num">
+                                <p data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="counter purecounter"></p>
+                                <span class="counter-text">Months Of Training</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Counter Section -->
+
+        <!-- ======= Portfolio Section ======= -->
+        <section id="work" class="portfolio-mf sect-pt4 route">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="title-box text-center">
+                            <h3 class="title-a">
+                                Portfolio
+                            </h3>
+                            <div class="line-mf"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="work-box">
+                            <a href="assets/img/project1.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                <div class="work-img">
+                                    <img src="assets/img/project1.png" alt="" class="img-fluid">
+                                </div>
+                            </a>
+                            <div class="work-content">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 class="w-title">Oakville</h2>
+                                        <div class="w-more">
+                                            <span class="w-ctegory">Web Design</span> / <span class="w-date">10 April 2023</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="w-like">
+                                            <a href="flex_project/index.html"> <span class="bi bi-plus-circle"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="work-box">
+                            <a href="assets/img/project2.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                <div class="work-img">
+                                    <img src="assets/img/project2.png" alt="" class="img-fluid">
+                                </div>
+                            </a>
+                            <div class="work-content">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 class="w-title">Glowing</h2>
+                                        <div class="w-more">
+                                            <span class="w-ctegory">Web Design</span> / <span class="w-date">15 April 2023</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="w-like">
+                                            <a href="grid_project/index.html"> <span class="bi bi-plus-circle"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="work-box">
+                            <a href="assets/img/project3.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                <div class="work-img">
+                                    <img src="assets/img/project3.png" alt="" class="img-fluid">
+                                </div>
+                            </a>
+                            <div class="work-content">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 class="w-title">Drill</h2>
+                                        <div class="w-more">
+                                            <span class="w-ctegory">Web Design</span> / <span class="w-date">18 April 2023</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="w-like">
+                                            <a href="flex_layout/index.html"> <span class="bi bi-plus-circle"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="work-box">
+                            <a href="assets/img/project4.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                <div class="work-img">
+                                    <img src="assets/img/project4.png" alt="" class="img-fluid">
+                                </div>
+                            </a>
+                            <div class="work-content">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 class="w-title">Delicious Restaurant</h2>
+                                        <div class="w-more">
+                                            <span class="w-ctegory">Web Design</span> / <span class="w-date">27 April 2023</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="w-like">
+                                            <a href="bootstarp/index.html"> <span class="bi bi-plus-circle"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="work-box">
+                            <a href="assets/img/project5.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                <div class="work-img">
+                                    <img src="assets/img/project5.png" alt="" class="img-fluid">
+                                </div>
+                            </a>
+                            <div class="work-content">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 class="w-title">Hiking</h2>
+                                        <div class="w-more">
+                                            <span class="w-ctegory">Web Design</span> / <span class="w-date">10 May 2023</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="w-like">
+                                            <a href="education website/index.html"> <span class="bi bi-plus-circle"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="work-box">
+                            <a href="assets/img/project6.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                <div class="work-img">
+                                    <img src="assets/img/project6.png" alt="" class="img-fluid">
+                                </div>
+                            </a>
+                            <div class="work-content">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 class="w-title">Fox University</h2>
+                                        <div class="w-more">
+                                            <span class="w-ctegory">Web Design</span> / <span class="w-date">17 may 2023</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="w-like">
+                                            <a href="psd to html/index.html"> <span class="bi bi-plus-circle"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Portfolio Section -->
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
+            <div class="overlay-mf"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="contact-mf">
+                            <div id="contact" class="box-shadow-full">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="title-box-2">
+                                            <h5 class="title-left">
+                                                Send Message Us
+                                            </h5>
+                                        </div>
+                                        <div>
+                                            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                                                <div class="row">
+                                                    <div class="col-md-12 mb-3">
+                                                        <div class="form-group">
+                                                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 mb-3">
+                                                        <div class="form-group">
+                                                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 mb-3">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 text-center my-3">
+                                                        <div class="loading">Loading</div>
+                                                        <div class="error-message"></div>
+                                                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                                                    </div>
+                                                    <div class="col-md-12 text-center">
+                                                        <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="title-box-2 pt-4 pt-md-0">
+                                            <h5 class="title-left">
+                                                Get in Touch
+                                            </h5>
+                                        </div>
+                                        <div class="more-info">
+                                            <ul class="list-ico">
+                                                <li><span class="bi bi-geo-alt"></span>B-201,Divya Recidency, Nikol,Ahmedabad</li>
+                                                <li><span class="bi bi-phone"></span> 9723297162</li>
+                                                <li><span class="bi bi-envelope"></span> kinjal11sutariya@gmail.com</li>
+                                            </ul>
+                                        </div>
+                                        <div class="socials">
+                                            <ul>
+                                                <li><a href="https://www.facebook.com/kinjal.sutariya.54/"><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
+                                                <li><a href="https://www.instagram.com/kinjal11sutariya3694/"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
+                                                <li><a href="https://github.com/kinjalhingrajiya"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
+                                                <li><a href="https://www.linkedin.com/in/kinjal-sutarsandhiya-40a692276/"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Contact Section -->
+
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="copyright-box">
+                        <p class="copyright"> <strong>Designed by: Miss. Kinjal Sutarsandhiya</strong> || All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End  Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
