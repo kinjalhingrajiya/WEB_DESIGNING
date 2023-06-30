@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image {
+            height: 300px;
+            width: 400px;
+            background: url(https://media.istockphoto.com/id/472563478/photo/underwater-world-with-corals-and-tropical-fish.jpg?s=612x612&w=0&k=20&c=W15vZgkJE5wmgrt2WY43-fS_whn32ouMc8wT18olEjk=);
+            background-size: 100% 100%;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .image::before {
+            content: "";
+            height: 300px;
+            width: 200px;
+            position: absolute;
+            top: 0;
+            left: -100%;
+            background: rgba(0, 0, 0, .2);
+            /* box-shadow: 0 0 10px black inset; */
+            animation: ani 3s infinite;
+        }
+        
+        .image::after {
+            content: "";
+            height: 300px;
+            width: 200px;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            background: rgba(0, 0, 0, .3);
+            /* box-shadow: 0 0 10px black inset; */
+            animation: ani1 3s infinite;
+        }
+        
+        .image:hover {
+            background-size: 120% 120%;
+        }
+        
+        @keyframes ani {
+            50% {
+                left: 0;
+                transform: rotate(180deg);
+            }
+        }
+        
+        @keyframes ani1 {
+            50% {
+                left: 50%;
+                transform: rotate(-180deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image"></div>
+</body>
+
+</html>

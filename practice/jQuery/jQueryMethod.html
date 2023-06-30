@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis vitae a placeat nihil tempora sapiente omnis, optio ex quis officia hic doloribus rerum, nam quo sequi odio id? Dignissimos, architecto.
+    </p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="both">Hide/Show</button>
+    <br>
+    <button id="fadeout">FadeOut</button>
+    <button id="fadein">FadeIn</button>
+    <button id="in_out">In/Out</button>
+    <script>
+        $("#hide").click(() => {
+            $('p').hide();
+        })
+        $("#show").click(() => {
+            $('p').show();
+        })
+        $("#both").click(() => {
+            $('p').toggle();
+        })
+        $("#fadeout").click(() => {
+            $('p').fadeOut(1000);
+        })
+        $("#fadein").click(() => {
+            $('p').fadeIn();
+        })
+
+        // $("#in_out").click(() => {
+        //     $('p').fadeToggle();
+        // })
+        $("#in_out").click(() => {
+            $('p').fadeTo("slow", 0.5);
+        })
+    </script>
+</body>
+
+</html>

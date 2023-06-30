@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="" alt="" id="img" onclick="click_img1()">
+    <img src="" alt="" id="img1">
+    <br>
+    <button id="btn1" onclick=" get_image()">Get image</button>
+    <button id="btn2" onclick="change_image()">change image</button>
+    <button id="btn3" onclick="change()">Change 1 to 2 & 2 to 1</button>
+    <script>
+        img_tag1 = document.getElementById('img');
+        img_tag2 = document.getElementById('img1');
+
+        function get_image() {
+            img_tag1.src = "1.jpeg"
+        }
+
+        function change_image() {
+            img_tag1.src = "2.jpeg"
+        }
+
+        function change() {
+            if (toggle == 0) {
+                img_tag1.src = "1.jpeg"
+                toggle++;
+            } else if (toggle == 1) {
+                img_tag1.src = "2.jpeg"
+                toggle--;
+            }
+        }
+        toggle = 0;
+
+        function click_img1() {
+            if (toggle == 0) {
+                img_tag2.src = "3.jpeg";
+                toggle++;
+            } else if (toggle == 1) {
+                img_tag2.src = "2.jpeg";
+                toggle++;
+            } else if (toggle == 2) {
+                img_tag2.src = "1.jpeg";
+                toggle++;
+                console.log(img_tag2);
+            } else {
+                img_tag2.src = "3.jpeg";
+                toggle = 0;
+            }
+
+            console.log(img_tag2);
+
+        }
+    </script>
+
+</body>
+
+</html>

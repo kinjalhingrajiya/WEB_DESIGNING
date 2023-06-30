@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .outer {
+            height: 500px;
+            width: 500px;
+            display: flex;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .inner1 {
+            height: 480px;
+            width: 250px;
+            border: 2px solid red;
+            /* margin: auto; */
+        }
+        
+        .question1 {
+            height: 50px;
+            width: inherit;
+            border: 2px solid;
+        }
+        
+        .q1,
+        .q2 {
+            display: none;
+            /* transition: 5s; */
+        }
+        
+        .main,
+        .main2 {
+            height: 300px;
+            width: inherit;
+            border: 2px solid green;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            transition: 2s;
+        }
+        
+        button {
+            margin-left: 130px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="inner1">
+            <div class="question1">Question1
+                <button class="btn" onclick="showdata()">^</button>
+            </div>
+            <div class="question1 q1"></div>
+            <div class="question1">Question2 <button onclick="showdata1()">^</button></div>
+            <div class="question1 q2"></div>
+        </div>
+        <div class="inner1">
+            <div class="main">ans1</div>
+            <div class="main2">ans2</div>
+        </div>
+    </div>
+    <script>
+        q1 = document.querySelector('.q1');
+        q2 = document.querySelector('.q2');
+        main = document.querySelector('.main');
+        main2 = document.querySelector('.main2');
+
+        function showdata() {
+            main.style.left = '50%';
+            q1.style.display = 'block';
+            q2.style.display = 'none';
+            main2.style.left = '100%';
+        }
+
+        function showdata1() {
+            main2.style.left = '50%';
+            q2.style.display = 'block';
+            q1.style.display = 'none';
+            main.style.left = '100%';
+
+        }
+    </script>
+</body>
+
+</html>

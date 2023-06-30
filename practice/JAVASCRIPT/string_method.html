@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        a = "this is string method Program.";
+        b = "     hello kINJAL! how r u KINJAL!      ";
+        document.write(a.length + "<br>"); // print length of the string
+        document.write(a.slice(2, 9) + "<br>"); // to print string between position 2 to 9
+        document.write(a.substr(2, 9) + "<br>") // print 2 position to 9 length of string, 2 is index,9 is length
+        document.write(a.substring(2, 9) + "<br>") //print same as slice but substring not get negetive value
+        document.write(a.replace("program", "of the javascript") + "<br>");
+        document.write(a.replace(/Program/i, "of the javascript") + "<br>"); //falg i means to not check uppercase or lowercase
+        document.write(b.replace(/kinjal/g, "Priyank") + "<br>"); //to global check
+        document.write(b.replace(/kiNjal/ig, "Priyank") + "<br>"); //flag to both global or caseinsencitive
+        document.write(b.replaceAll("kinjal", "priyank") + "<br>"); //replace all in the document
+        document.write(a.toUpperCase() + "<br>"); // string convert in uppercase
+        document.write(b.toLowerCase() + "<br>"); //string convert in lowercase
+        document.write(a.concat(b) + "<br>"); //merge the two string
+        document.write(b + "<br>");
+        c = b.trim(); //remove white space of the both side of the string
+        document.write(b.length + "<br>")
+        document.write(c.length + "<br>");
+        d = b.trimStart(); //remove starting whitespace of the string
+        document.write(d.length + "<br>");
+        e = b.trimEnd(); //remove ending whitespace of the string
+        document.write(e.length + "<br>");
+        f = "hii";
+        document.write(f.padStart(6, "0") + "<br>"); //6 is length if string length is  not 6 so 0 add in stating of the string if length not 6
+        document.write(f.padEnd(4, "0") + "<br>"); //6 is length if string length is  not 6 so 0 add in ending of the string if length not 6
+        document.write(a.charAt(3) + "<br>"); //to 3 position character of the string
+        document.write(a.charCodeAt(2) + "<br>"); //to print unicode of the spceific index of the string
+        document.write(a[0] + "<br>"); //print o position character of the string
+        h = a.split("") //convert into an array
+        document.write(h + "<br>");
+        document.write(h[6] + "<br>");
+    </script>
+</body>
+
+</html>

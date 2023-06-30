@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        p {
+            font-size: 20px;
+            background-color: lightgoldenrodyellow;
+            border: 2px solid green;
+            text-align: center;
+            height: 50px;
+        }
+        
+        .effect {
+            font-size: smaller;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="p1">Question</p>
+    <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque deleniti laboriosam at voluptas iste autem quia ipsa. Nemo asperiores reprehenderit aperiam repudiandae error earum, sit blanditiis totam eius assumenda iusto?</p>
+    <button>Add/remove class</button>
+    <script>
+        // $("#p1").click(() => {
+        //     $("#p2").slideUp();
+        // })
+        // $("#p1").click(() => {
+        //     $("#p2").slideDown();
+        // })
+        $("#p1").click(() => {
+            $("#p2").slideToggle();
+        })
+        $("#p1").css("color", "red");
+        $("#p2").css({
+            "color": "green",
+            "border": "2px solid pink"
+        });
+        // $("#p2").addClass("effect");
+        // $("#p2").removeClass("effect");
+        $('button').click(() => {
+            $("#p2").toggleClass("effect");
+        })
+    </script>
+</body>
+
+</html>

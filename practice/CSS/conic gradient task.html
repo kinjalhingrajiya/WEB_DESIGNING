@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 200px;
+            width: 200px;
+            /* background: yellow; */
+            margin: 100px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .main::after {
+            content: "";
+            height: 180px;
+            width: 180px;
+            background: black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .main::before {
+            content: "";
+            height: 400px;
+            width: 400px;
+            background: conic-gradient(red 0deg, yellow 90deg, transparent 90deg, transparent 180deg, blue 180deg, green 270deg, transparent 270deg, transparent 320deg);
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            /* transform: rotate(180deg); */
+            transition: 1s;
+            animation: spin 1s infinite;
+        }
+        /* .main:hover::before {
+            transform: rotate(180deg);
+        } */
+        
+        @keyframes spin {
+            100% {
+                transform: rotate(270deg);
+            }
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+    </div>
+</body>
+
+</html>

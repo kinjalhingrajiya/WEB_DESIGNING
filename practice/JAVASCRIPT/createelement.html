@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="z">
+        <p class="b" style="color:blueviolet">hello</p>
+        <p class="b" style="color:blueviolet">hiii</p>
+        <p class="a">How are you?</p>
+        <button class="btn">Add</button>
+    </div>
+    <script>
+        div_tag = document.querySelector('.z');
+        h1_tag = document.createElement('h1');
+        txt = document.createTextNode("Kinjal");
+        btn = document.querySelector('.btn');
+        para = document.querySelectorAll('.b');
+        para1 = document.querySelector('.a');
+        h1_tag.append(txt);
+        // para.style.border = "2px solid";
+        for (i = 0; i < para.length; i++) {
+            para[i].style.color = "red";
+        }
+
+        function add() {
+            // div_tag.appendChild(h1_tag);
+            div_tag.insertBefore(h1_tag, para1);
+            // para.style.color = "red";
+
+        }
+
+        btn.addEventListener("click", add);
+
+
+        // append()  and apppendChild() both method work is same to add into parent element.
+    </script>
+</body>
+
+</html>

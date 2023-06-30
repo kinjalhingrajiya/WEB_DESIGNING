@@ -315,12 +315,12 @@ footer li {
     list-style-type: none;
 }
 
-@media(max-width:700px) {
+@media(max-width:500px) {
     .mini::after {
-        top: 70%;
+        top: 60%;
     }
     .admin {
-        padding-left: 150px;
+        padding-left: 50px;
     }
 }
 

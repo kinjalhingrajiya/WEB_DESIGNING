@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2::after {
+            content: "paragraph";
+            color: aqua;
+        }
+        
+        p::before {
+            content: url(img\ 2.png);
+        }
+        
+        h2::first-letter {
+            background-color: blue;
+            color: green;
+        }
+        
+        p::first-line {
+            background-color: gray;
+        }
+        
+        input::placeholder {
+            color: red;
+        }
+        
+         ::selection {
+            color: white;
+            background-color: blue;
+        }
+        
+        a {
+            height: 100px;
+            width: 50px;
+            display: block;
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="">Home</a>
+    <h2>Hello</h2>
+    <h2>Hello</h2>
+    <h2>Hello</h2>
+    <input type="text" placeholder="Enter Name">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti ratione quo magnam illo quia culpa nesciunt autem eius error eveniet, iure reprehenderit accusamus amet. Minima dolore rem obcaecati pariatur harum!</p>
+</body>
+
+</html>

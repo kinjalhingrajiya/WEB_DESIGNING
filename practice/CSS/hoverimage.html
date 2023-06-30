@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .x {
+            height: 200px;
+            width: 300px;
+            background: url(image.jpg);
+            background-size: 100% 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            position: relative;
+            background-position: -20px 0px;
+            background-repeat: no-repeat;
+            color: white;
+            font-size: 20px;
+            font-weight: bolder;
+            transition: .5s;
+        }
+        
+        .x:hover {
+            background-position: 0px 0px;
+        }
+        
+        .y {
+            height: 150px;
+            width: 250px;
+            border: 2px solid white;
+            padding: 100px 0 0 80px;
+            letter-spacing: 5px;
+            color: white;
+            font-weight: bolder;
+            position: absolute;
+            opacity: 0;
+        }
+        
+        .x:hover .y {
+            opacity: 1;
+            margin: -left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="x">Fall Ahead
+        <div class="y">New Arrival</div>
+    </div>
+</body>
+
+</html>

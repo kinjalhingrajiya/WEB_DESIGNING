@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav {
+            /* height: 50px; */
+            background: gray;
+            display: flex;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            transition: 1s;
+        }
+        
+        .logo {
+            width: 20%;
+            background: lightblue;
+            padding: 25px 15px;
+            font-size: 35px;
+            font-weight: bold;
+            transition: 1s;
+        }
+        
+        .links {
+            width: 80%;
+            background: lightcoral;
+            padding: 25px 50px;
+            font-size: 35px;
+            font-weight: bold;
+            transition: 1s;
+        }
+        
+        .x {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body onscroll="scrollEvent()">
+
+    <div class="nav" id="nav">
+        <div class="logo" id="logo">Logo</div>
+        <div class="links" id="links">LINKS</div>
+    </div>
+
+    <div class="x">
+        <h1>Heading</h1>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias? Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias? Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae
+        facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt
+        ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis
+        magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti,
+        alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus,
+        repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit
+        temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit.
+        Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis
+        alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum,
+        dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis
+        ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt
+        ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis
+        magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti,
+        alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus,
+        repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit
+        temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit.
+        Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis
+        alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum,
+        dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis
+        ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt
+        ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis
+        magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti,
+        alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus,
+        repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit
+        temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit.
+        Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis
+        alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum,
+        dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis
+        ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt
+        ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis
+        magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti,
+        alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus,
+        repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit
+        temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit.
+        Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis
+        alias?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum,
+        dolor sit amet consectetur adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias?Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Quo beatae facilis ratione nesciunt ad. Quaerat, perspiciatis magnam quia corrupti, alias fuga ad natus, repellendus impedit temporibus velit. Possimus, corporis alias?
+    </div>
+
+
+    <script>
+        logo_div = document.getElementById('logo');
+
+        links_div = document.getElementById('links');
+        nav_div = document.getElementById('nav');
+
+        function scrollEvent() {
+            if (document.documentElement.scrollTop > 500) {
+                logo_div.style.padding = "10px 0";
+                logo_div.style.fontSize = "16px";
+
+                links_div.style.padding = "10px 0";
+                links_div.style.fontSize = "16px";
+
+                nav.style.top = "-100px";
+            } else {
+                logo_div.style.padding = "25px 15px";
+                logo_div.style.fontSize = "35px";
+                logo_div.style.fontSize = "35px";
+
+                links_div.style.padding = "25px 15";
+                links_div.style.fontSize = "35px";
+
+                nav.style.top = "0px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

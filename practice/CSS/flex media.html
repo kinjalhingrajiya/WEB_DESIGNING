@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .main {
+            /* height: 100px; */
+            background-color: gray;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .main .sub1 {
+            height: 100px;
+            width: 50%;
+            border: 2px solid;
+        }
+        
+        .content {
+            /* height: 400px; */
+            background: lightblue;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .content .sub2 {
+            height: 400px;
+            width: 33.33%;
+            border: 2px solid;
+        }
+        /* @media only screen and (max-width:500px) {
+            div {
+                background: green;
+            }
+        } */
+        
+        @media(max-width:500px) {
+            .main .sub1 {
+                width: 100%;
+            }
+            .content .sub2 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="sub1"></div>
+        <div class="sub1"></div>
+    </div>
+    <div class="content">
+        <div class="sub2"></div>
+        <div class="sub2"></div>
+        <div class="sub2"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .x {
+        height: 450px;
+        width: 250px;
+        background: gray;
+    }
+    
+    .x .image {
+        height: 300px;
+        width: 250px;
+        background-color: lightblue;
+        position: relative;
+    }
+    
+    .x .quickview {
+        height: 50px;
+        width: 250px;
+        background-color: palegreen;
+        top: 0;
+        left: 0;
+        position: absolute;
+        opacity: 0;
+        transition: 1s;
+        font-size: 15px;
+        color: white;
+        text-align: center;
+        line-height: 50px;
+    }
+    
+    .x .info {
+        height: 150px;
+        width: 250px;
+        background: lavender;
+    }
+    
+    .image:hover .quickview {
+        top: 250px;
+        opacity: 1;
+        background-color: black;
+    }
+</style>
+
+<body>
+    <div class="x">
+        <div class="image"><img src="image.jpg" height="300px" width="250px" alt="">
+            <div class="quickview">Quick View</div>
+        </div>
+
+        <div class="info"></div>
+    </div>
+</body>
+
+</html>

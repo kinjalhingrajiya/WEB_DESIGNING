@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="b">
+        <p class="b" style="color:blueviolet">hello</p>
+        <p class="b" style="color:blueviolet">hiii</p>
+        <p class="a">How are you?</p>
+        <button class="btn">Add</button>
+    </div>
+    <script>
+        div_tag = document.querySelector('.b');
+        btn = document.querySelector('.btn');
+        para1 = document.querySelector('.a');
+
+        // para.style.border = "2px solid";
+
+
+        // function add() {
+        //     for (i = 0; i < 10; i++) {
+        //         h1_tag = document.createElement('h1');
+        //         txt = document.createTextNode("Kinjal");
+        //         h1_tag.append(txt);
+        //         div_tag.insertBefore(h1_tag, para1);
+        //         h1_tag.style.color = "red";
+        //         h1_tag.style.border = "2px dashed blue";
+        //         h1_tag.style.display = "inline";
+        //     }
+        // }
+
+        btn.addEventListener("click", () => {
+            for (i = 0; i < 10; i++) {
+                h1_tag = document.createElement('h1');
+                txt = document.createTextNode("Kinjal");
+                h1_tag.append(txt);
+                div_tag.insertBefore(h1_tag, para1);
+                h1_tag.style.color = "red";
+                h1_tag.style.border = "2px dashed blue";
+                h1_tag.style.display = "inline";
+            }
+        });
+    </script>
+</body>
+
+</html>

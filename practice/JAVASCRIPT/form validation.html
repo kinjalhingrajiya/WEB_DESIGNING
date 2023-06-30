@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Name : <input type="text" id="nm">
+    <span id="nmspan"></span>
+    <br> Mobile no. : <input type="text" id="mno">
+    <span id="mnospan"></span>
+    <br>
+    <input type="submit" onclick="validate()">
+    <script>
+        nm1 = document.getElementById('nm');
+        mob = document.getElementById('mno');
+        nmspan1 = document.getElementById('nmspan');
+        mnospan = document.getElementById('mnospan');
+        // console.log(nm);
+        // console.log(nmspan);
+        pattern = /^[a-zA-Z]+$/;
+        mno_pattern = /^[0-9]+$/
+        nmspan.innerHtml = "* Required......";
+
+
+
+        function validate() {
+            if (nm1.value == "") {
+                document.getElementById('nmspan').innerHTML = "* Required......";
+                nmspan1.style.color = "red";
+
+            } else {
+                if (!pattern.test(nm1.value)) {
+                    nmspan1.innerHTML = "Letters only....";
+                    nmspan1.style.color = "red";
+                }
+                nmspan.innerHTML = "";
+            }
+            if (mob.value == "") {
+                mnospan.innerHTML = "* Required......";
+                mnospan.style.color = "red";
+            } else if (!mno_pattern.test(mob.value)) {
+                mnospan.innerHTML = "numbers only......";
+                nmspan1.style.color = "red";
+            } else {
+                mnospan.innerHTML = "";
+            }
+        }
+    </script>
+</body>
+
+</html>

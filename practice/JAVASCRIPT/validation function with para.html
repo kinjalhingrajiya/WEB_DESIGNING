@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    name: <input type="text" id="nm" onblur="validate(nm,nmspan)">
+    <span id="nmspan"></span><br><br> E-mail: <input type="text" id="eml" onblur="validate(eml,emlspan)">
+    <span id="emlspan"></span>
+    <script>
+        pattern = /^[a-zA-Z]+$/;
+        pattern2 = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+        function validate(data, text) {
+            if (data.value == "") {
+                text.innerHTML = "* Required";
+                text.style.color = "red";
+            } else {
+                if (!pattern.test(nm.value)) {
+                    nmspan.innerHTML = "*Letters Only";
+                    text.style.color = "red";
+                } else {
+                    nmspan.innerHTML = "";
+                }
+                if (!pattern2.test(eml.value)) {
+                    emlspan.innerHTML = "*enter Valid e-mail Id.....";
+                    text.style.color = "red";
+                } else {
+                    emlspan.innerHTML = "";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

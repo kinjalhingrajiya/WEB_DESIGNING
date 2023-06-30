@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(coral, blue);
+            background-attachment: fixed;
+            /* filter: blur(8px); */
+            /* backdrop-filter: blur(8px); */
+        }
+        
+        .super {
+            /* position: relative; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .round {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .main {
+            height: 200px;
+            width: 200px;
+            background: pink;
+            border: 12px solid transparent;
+            border-top: 12px solid lightblue;
+            border-radius: 100px;
+            animation: effect1 1s linear infinite;
+        }
+        
+        .main2 {
+            height: 150px;
+            width: 150px;
+            background: red;
+            border: 12px solid transparent;
+            border-top: 12px solid lightgreen;
+            border-radius: 75px;
+            animation: effect2 1s linear infinite;
+            position: relative;
+        }
+        
+        .main3 {
+            height: 90px;
+            width: 90px;
+            background: yellow;
+            border: 12px solid transparent;
+            border-top: 12px solid lightseagreen;
+            border-radius: 100px;
+            animation: effect1 1s linear infinite;
+            position: absolute;
+        }
+        
+        @keyframes effect1 {
+            0% {
+                transform: rotate(0);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes effect2 {
+            0% {
+                transform: rotate(0);
+            }
+            100% {
+                transform: rotate(-360deg);
+            }
+        }
+    </style>
+</head>
+<div class="super">
+    <div class="main round">
+        <div class="main2 round">
+            <div class="main3 round">
+            </div>
+        </div>
+    </div>
+</div>
+
+<body>
+</body>
+
+</html>

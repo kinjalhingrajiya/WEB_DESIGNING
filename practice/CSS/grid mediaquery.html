@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            /* height: 200px; */
+            background-color: gray;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 100px;
+        }
+        
+        .col {
+            /* height: 200px; */
+            background: lightpink;
+            border: 2px solid;
+        }
+        
+        @media(max-width:500px) {
+            .main {
+                grid-template-columns: 1fr;
+            }
+            .main {
+                grid-template-rows: 100px 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+
+</body>
+
+</html>

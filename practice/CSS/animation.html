@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .progress {
+            background: linear-gradient(to right, #82CFD0 0%, #82CFD0 40%, #fff 40%, #fff 100%);
+            border: solid 2px #82CFD0;
+            border-radius: 8px;
+            height: 7px;
+            width: 400px;
+            outline: none;
+            transition: background 450ms ease-in;
+            -webkit-appearance: none;
+        }
+        
+        .progress::-webkit-slider-thumb {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            -webkit-appearance: none;
+            cursor: ew-resize;
+            background: #434343;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="range" value="40" min="0" max="100" step="1" class="progress">
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="h"></h1>
+    <h1 id="h1"></h1>
+    <button id="btn1" onclick=" get_text()">Get Text</button>
+    <button id="btn2" onclick="change_text()">change text</button>
+    <button id="btn3" onclick="change()">Change 1 to 2 & 2 to 1</button>
+    <script>
+        h1_tag1 = document.getElementById('h');
+        h1_tag2 = document.getElementById('h1');
+        console.log(h1_tag1);
+        console.log(h1_tag2);
+
+        function get_text() {
+            h1_tag1.innerHTML = "sutariya";
+            h1_tag2.innerHTML = "kinjal";
+            console.log(h1_tag1);
+            console.log(h1_tag2);
+        }
+
+        function change_text() {
+            h1_tag1.innerHTML = "Kinjal";
+            h1_tag2.innerHTML = "Hingrajiya"
+        }
+
+        function change() {
+            if (h1_tag1.innerHTML == "sutariya" && h1_tag2.innerHTML == "kinjal") {
+                h1_tag1.innerHTML = "Kinjal";
+                h1_tag2.innerHTML = "Hingrajiya"
+            } else if (h1_tag1.innerHTML == "Kinjal" && h1_tag2.innerHTML == "Hingrajiya") {
+                h1_tag1.innerHTML = "sutariya";
+                h1_tag2.innerHTML = "kinjal";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
