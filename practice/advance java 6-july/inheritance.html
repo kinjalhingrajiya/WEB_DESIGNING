@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Test {
+            a() {
+                console.log("Hello All...");
+            }
+            z = () => {
+                console.log("How r u?");
+            }
+        }
+        class Test2 extends Test {
+            b() {
+                console.log("Absract Class");
+            }
+        }
+        var obj = new Test2;
+        obj.a();
+        obj.z();
+        obj.b();
+    </script>
+</body>
+
+</html>

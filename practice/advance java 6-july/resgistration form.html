@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="">Name:</label><input type="text" id="nm" required onblur="validate(nm,nmerr)"><span id="nmerr"></span><br>
+        <label for="">E-mail</label><input type="text" id="mail" required onblur="validate(mail,emlerr)"><span id="emlerr"></span><br>
+        <label for="M.no">M.no</label><input type="text" id="mno" required maxlength="10" minlength="10" onblur="validate(mno,mnoerr)"><span id="mnoerr"></span><br>
+        <input type="checkbox" required>Agree to all <br>
+        <button>Submit</button>
+    </form>
+    <script>
+        pattern = /^[a-zA-Z]+$/;
+        pattern2 = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        pattern3 = /^[0-9]+$/;
+
+        function validate(data, text) {
+            if (data.value == "") {
+                text.innerHTML = "* Required";
+                text.style.color = "red";
+            } else {
+                if (!pattern.test(nm.value)) {
+                    nmerr.innerHTML = "*Letters Only";
+                    text.style.color = "red";
+                } else {
+                    nmerr.innerHTML = "";
+                }
+                if (!pattern2.test(mail.value)) {
+                    emlerr.innerHTML = "*Enter Valid E-mail Id";
+                    text.style.color = "red";
+                } else {
+                    emlerr.innerHTML = "";
+                }
+
+                if (!pattern3.test(mno.value)) {
+                    mnoerr.innerHTML = "*Number Only";
+                    text.style.color = "red";
+                } else {
+                    mnoerr.innerHTML = "";
+                }
+            }
+        }
+
+
+
+        function validate1(data, text) {
+            if (data.value == "") {
+                text.innerHTML = "* Required";
+                text.style.color = "red";
+            } else {
+                if (!pattern2.test(mail.value)) {
+                    emlerr.innerHTML = "*Enter Valid E-mail Id";
+                    text.style.color = "red";
+                } else {
+                    emlerr.innerHTML = "";
+                }
+
+            }
+        }
+
+        function validate2(data, text) {
+            if (data.value == "") {
+                text.innerHTML = "* Required";
+                text.style.color = "red";
+            } else {
+                if (!pattern3.test(mno.value)) {
+                    mnoerr.innerHTML = "*Number Only";
+                    text.style.color = "red";
+                } else {
+                    mnoerr.innerHTML = "";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- polymopsism => One Name Many Form, you can same function create in Differant class that's call polymopsism. -->
+    <script>
+        class A {
+            test() {
+                console.log("Hiii....helloo");
+            }
+
+        }
+        class B {
+            test(x, y) {
+                console.log(x + y);
+            }
+        }
+        const a1 = new A;
+        const b1 = new B;
+        a1.test()
+        b1.test(3, 5);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr1 = [
+            Men = [
+                Product1 = {
+                    name: "Shirt",
+                    price: 250
+                },
+                Product2 = {
+                    name: "T-shirt",
+                    price: 300
+                },
+                Product3 = {
+                    name: "Jeans",
+                    price: 280
+                }
+            ],
+            Women = [Product1 = {
+                    name: "Shirt",
+                    price: 400
+                },
+                Product2 = {
+                    name: "T-shirt",
+                    price: 300
+                },
+                Product3 = {
+                    name: "Jeans",
+                    price: 200
+                }
+            ],
+            Kids = [Product1 = {
+                    name: "Shirt",
+                    price: 800
+                },
+                Product2 = {
+                    name: "T-shirt",
+                    price: 300
+                },
+                Product3 = {
+                    name: "Jeans",
+                    price: 700
+                }
+            ]
+        ];
+        n = [];
+        average_price = [Men, Women, Kids];
+
+        n.push(Men.map((a) => a.price).reduce((n, b, x, y) => {
+            tot = n + b;
+            len = y.length;
+            return tot / len;
+        }));
+        n.push(Women.map((a) => a.price).reduce((n, b, x, y) => {
+            tot = n + b;
+            len = y.length;
+            return tot / len;
+        }));
+        n.push(Kids.map((a) => a.price).reduce((n, b, x, y) => {
+            tot = n + b;
+            len = y.length;
+            return tot / len;
+        }));
+        console.log(n);
+        a = Math.max(...n);
+        console.log(a);
+
+
+
+
+        // total = [];
+        // for (i = 0; i <= arr1.length; i++) {
+        //     average_price = arr1[i].map((n) => n.price);
+        //     for (j = 0; j < average_price.length; j++) {
+        //         tot = average_price.reduce((n, a, i, arr) => {
+        //             total = n + a;
+        //             len = arr.length;
+        //             return total / len;
+        //         });
+        //     }
+        //     console.log(tot);
+        // }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     :root {
+        --main-background-color: red;
+        --main-color: yellow;
+    }
+    
+    .header {
+        background-color: var(--main-background-color);
+        & p {
+            font-size: 100px;
+            & span {
+                &:hover {
+                    color: var(--main-color);
+                }
+            }
+        }
+    }
+</style>
+
+<body>
+    <h1 class="header">
+        <p><span>hello</span></p>
+        <h3 class="h3">hello</h3>
+    </h1>
+    <script>
+        class First {
+            constructor() {
+                console.log("Hello!...Every One");
+            }
+            test() {
+                console.log("Hello");
+            }
+            c = function second(test) {
+                console.log("hiii");
+            }
+            static b = () =>
+                console.log("how r u?");
+        }
+        let obj = new First;
+        obj.test();
+        obj.c();
+        First.b();
+        // static function is only call with class name
+    </script>
+</body>
+
+</html>

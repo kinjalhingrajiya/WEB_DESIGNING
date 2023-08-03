@@ -643,7 +643,17 @@
 .propart {
     text-align: center;
     position: relative;
-    /* border: 2px solid; */
+}
+
+.propart1 {
+    width: 100%;
+    position: relative;
+    padding: 20px;
+}
+
+.propart1 img {
+    object-fit: contain;
+    width: 100%;
 }
 
 .info {
@@ -671,7 +681,7 @@
     padding: 8px 20px;
     background-color: #2e4839;
     color: white;
-    top: 2%;
+    top: 5%;
     left: 12%;
     /* margin: 20px 30px; */
     border-radius: 5px;
@@ -682,18 +692,22 @@
 .back {
     position: absolute;
     top: 0;
-    left: 11%;
+    left: 0;
     opacity: 0;
     transition: 1s;
+    width: 100%;
+    padding: 20px;
     /* border: 2px solid; */
     margin: auto;
+    transition: 1s;
+    /* background-color: red; */
 }
 
-.propart:hover .back {
+.propart1:hover .back {
     opacity: 1;
 }
 
-
+*/
 /* <!-- ---content3 start--------- --> */
 
 .content4 {
@@ -701,7 +715,8 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.contentpart4 {
+.contentpart4,
+.contentpart5 {
     background: url(../IMAGES/banner-21-1.jpg);
     background-position: center;
     background-size: 100% 100%;
@@ -713,12 +728,6 @@
 
 .contentpart5 {
     background: url(../IMAGES/banner-22-1.jpg);
-    background-position: center;
-    background-size: 100% 100%;
-    padding: 100px 30px;
-    margin-left: 10px;
-    margin-top: 50px;
-    transition: 2s;
 }
 
 .contentpart4:hover {

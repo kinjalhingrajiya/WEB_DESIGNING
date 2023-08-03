@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        class Mother {
+            constructor(tot = 100) {
+                this.total = tot;
+            }
+            show1() {
+                return this.total;
+            }
+
+        }
+        class Son extends Mother {
+            constructor(tot, share = 0.1) {
+                super(tot);
+                this.share = share;
+            }
+            show() {
+                console.log("Son property inherit from Mother property (out of 100%) " + this.show1() * this.share + "%");
+            }
+        }
+
+        class Daughter extends Mother {
+            constructor(tot, share = 0.9) {
+                super(tot);
+                this.share = share;
+            }
+            show2() {
+                console.log("Daughter property inherit from Mother property (out of 100%) " + this.show1() * this.share + "%");
+            }
+        }
+        const obj = new Son;
+        const obj1 = new Daughter;
+        obj.show();
+        obj1.show2();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <h1 id="h">
+
+    </h1>
+
+    <script>
+        const student = {
+            name: "sita",
+            age: 26,
+            m1: 67,
+            m2: 76,
+            m3: 85,
+            fun: function() {
+                return "name:" + this.name + "<br> " + "age:" + this.age;
+            },
+            total: function() {
+                return this.m1 + this.m2 + this.m3;
+            },
+            per: function() {
+                return this.total() / 3;
+            }
+        }
+        const student1 = {
+            name: "kajal",
+            age: 26,
+            m1: 76,
+            m2: 46,
+            m3: 65,
+            fun: function() {
+                return "name:" + this.name + "<br> " + "age:" + this.age;
+            },
+            total: function() {
+                return this.m1 + this.m2 + this.m3;
+            },
+            per: function() {
+                return this.total() / 3;
+            }
+        }
+        const student2 = {
+            name: "Radha",
+            age: 26,
+            m1: 79,
+            m2: 98,
+            m3: 85,
+            fun: function() {
+                return "name:" + this.name + "<br> " + "age:" + this.age;
+            },
+            total: function() {
+                return this.m1 + this.m2 + this.m3;
+            },
+            per: function() {
+                return this.total() / 3;
+            }
+        }
+        const student3 = {
+            name: "Meera",
+            age: 26,
+            m1: 78,
+            m2: 50,
+            m3: 96,
+            fun: function() {
+                return "name:" + this.name + "<br> " + "age:" + this.age;
+            },
+            total: function() {
+                return this.m1 + this.m2 + this.m3;
+            },
+            per: function() {
+                return this.total() / 3;
+            }
+        }
+        const student4 = {
+            name: "Meena",
+            age: 26,
+            m1: 78,
+            m2: 84,
+            m3: 85,
+            fun: function() {
+                return "name:" + this.name + "<br> " + "age:" + this.age;
+            },
+            total: function() {
+                return this.m1 + this.m2 + this.m3;
+            },
+            per: function() {
+                return this.total() / 3;
+            }
+        }
+        for ()
+            document.write(student.fun() + "<br>" + student.total() + "<br>" + student.per() + "<br>");
+        document.write(student1.fun() + "<br>" + student1.total() + "<br>" + student1.per() + "<br>");
+        document.write(student2.fun() + "<br>" + student2.total() + "<br>" + student2.per() + "<br>");
+        document.write(student3.fun() + "<br>" + student3.total() + "<br>" + student3.per() + "<br>");
+        document.write(student4.fun() + "<br>" + student4.total() + "<br>" + student4.per() + "<br>");
+    </script>
+</body>
+
+</html>

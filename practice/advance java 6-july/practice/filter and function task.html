@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        arr1 = [{
+            name: "kinjal",
+            age: 26
+        }, {
+            name: "Bhavesh",
+            age: 26
+        }, {
+            name: "Nita",
+            age: 26
+        }, {
+            name: "kajal",
+            age: 26
+        }, {
+            name: "krisha",
+            age: 26
+        }];
+
+        function getname(...arr) {
+            return arr.filter((n) => n.name.startsWith('k'));
+        }
+        console.log(getname(...arr1));
+        // second way
+
+        function getname1(...args) {
+            return args[0].filter((n) => n.name[0] == "k");
+        }
+
+        console.log(getname1([{
+            name: "kinjal",
+            age: 25
+        }, {
+            name: "minal",
+            age: 24
+        }, {
+            name: "kajal",
+            age: 25
+        }, {
+            name: "Hinal",
+            age: 29
+        }]));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="tableinfo"></div>
+    </table>
+    <script>
+        data = document.getElementById('tableinfo');
+        var mainObj = [{
+            name: "Raj",
+            age: 21,
+            course: "WD"
+        }, {
+            name: "Vraj",
+            age: 28,
+            course: "GD"
+        }, {
+            name: "Ram",
+            age: 18,
+            course: "MERN"
+        }, {
+            name: "Shyam",
+            age: 38,
+            course: "FULL STACK"
+        }];
+        var k = `<table border=2><caption><b>Student Table</b></caption><tr><th>Name</th><th>Age</th><th>Course</th></tr><tbody>`
+        for (i = 0; i < mainObj.length; i++) {
+            k += '<tr>';
+            k += `<td> ${ mainObj[i].name}</td>`;
+            k += `<td> ${ mainObj[i].age}</td>`;
+            k += `<td> ${ mainObj[i].course}</td>`;
+            k += '</tr>';
+        }
+        k += '</tbody></table>';
+        data.innerHTML = k;
+    </script>
+</body>
+
+</html>

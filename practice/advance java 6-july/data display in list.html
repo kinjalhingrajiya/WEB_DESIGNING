@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr = [23, 45, 56];
+        var stud = {
+            name: "kinjal",
+            age: 26,
+            course: "Mern Stack"
+        }
+        for (i of arr) {
+            document.write(`${i} <br>`);
+        }
+        document.write(`<li>${stud.name}</li><li>${stud.age}</li><li>${stud.course}</li>`);
+        for (a in stud) {
+            document.write(`<li>${a}:${stud[a]}</li>`);
+        }
+        document.write(Object.values(stud));
+        document.write("<br>")
+        Object.keys(stud).forEach(key => {
+            document.write(`<li>${key} : ${stud[key]}</li>`);
+        });
+    </script>
+</body>
+
+</html>

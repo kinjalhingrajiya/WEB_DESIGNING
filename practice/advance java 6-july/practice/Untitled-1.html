@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr1 = {
+            Product1: [Men = {
+                    Product1: "Shirt",
+                    price: 250
+                },
+                Women = {
+                    Product1: "T-shirt",
+                    price: 300
+                },
+                Kids = {
+                    Product1: "Jeans",
+                    price: 280
+                }
+            ]
+        };
+
+        let users = [Men, Women, Kids];
+        let names = [];
+        average_price = users.map((n) => n.price).reduce((s, n, i, a) => {
+            total = s + n
+            arr_length = a.length;
+            return total / arr_length;
+        });
+        console.log(average_price);
+    </script>
+</body>
+
+</html>

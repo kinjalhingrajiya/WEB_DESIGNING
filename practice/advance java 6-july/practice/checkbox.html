@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <label><input type="checkbox" name="sample" class="selectall" onclick="toggle()"/> Select all</label>
+
+    <div id="checkboxlist">
+
+        <label><input type="checkbox" name="sample[]" class="x1" />checkbox1</label><br />
+        <label><input type="checkbox" name="sample[]" class="x1"/>checkbox2</label><br />
+        <label><input type="checkbox" name="sample[]" class="x1"/>checkbox3</label><br />
+        <label><input type="checkbox" name="sample[]" class="x1"/>checkbox4</label><br />
+
+    </div>
+    <script>
+        function toggle() {
+            main1 = document.querySelector('.selectall')
+            var main2 = document.querySelectorAll(".x1");
+            for (i = 0; i < main2.length; i++) {
+                main2[i].checked = main1.checked;
+            }
+        }
+    </script>
+</body>
+
+</html>

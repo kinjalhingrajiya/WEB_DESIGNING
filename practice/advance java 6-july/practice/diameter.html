@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const radius = [2, 3, 4, 6, 7];
+        const result = [];
+        const result1 = [];
+
+        // const other = function() {
+        //     for (i = 0; i < radius.length; i++) {
+        //         result.push(Math.PI * radius[i]);
+        //     }
+        //     console.log(result);
+        // }
+        // console.log(other());
+        const diameter = function(r) {
+            return 2 * r;
+        }
+        const calc = function(r, d) {
+            for (i = 0; i < r.length; i++) {
+                result.push(d(r[i]));
+            }
+            return result;
+        }
+        console.log(calc(radius, diameter));
+        const Circumference = function(r) {
+            return 2 * Math.PI * r;
+        }
+        const calc1 = function(r, c) {
+            for (i = 0; i < r.length; i++) {
+                result1.push(c(r[i]));
+            }
+            return result1;
+        }
+        console.log(calc1(radius, Circumference));
+    </script>
+</body>
+
+</html>

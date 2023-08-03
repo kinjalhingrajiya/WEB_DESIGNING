@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        td {
+            border: 2px solid;
+            vertical-align: top;
+            text-align: left;
+            width: 70px;
+        }
+        
+        .none {
+            border: none;
+        }
+        
+        .one {
+            border-right: none;
+        }
+        
+        .top {
+            border-top: 2px solid;
+        }
+        
+        .bottom {
+            border-bottom: 2px solid;
+        }
+        
+        .top1 {
+            border-right: 2px solid;
+        }
+        
+        .bottom1 {
+            border-right: 2px solid;
+            border-bottom: 2px solid;
+        }
+        
+        .left {
+            border-left: 2px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <table cellpadding="10px" cellspacing="0">
+        <tr>
+            <td rowspan="2" colspan="2">1</td>
+            <td>3</td>
+            <td rowspan="2">4</td>
+            <td rowspan="2" colspan="2">5</td>
+        </tr>
+        <tr>
+
+            <td rowspan="2">3</td>
+            <td class="none"></td>
+        </tr>
+        <tr>
+            <td colspan="2">1</td>
+            <td colspan="2">4</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td colspan="2">2</td>
+            <td rowspan="2">4</td>
+            <td colspan="2">5</td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="none bottom left">1</td>
+            <td class="none top"></td>
+            <td rowspan="2">3</td>
+            <td rowspan="2" class="none bottom">5</td>
+            <td class="none top1"></td>
+            </td>
+        </tr>
+        <tr>
+            <td class="none bottom"></td>
+            </td>
+            <td>4</td>
+            <td class="none bottom1"></td>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+
+</html>

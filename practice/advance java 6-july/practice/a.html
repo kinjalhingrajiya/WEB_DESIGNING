@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <style>
+        .on_off:nth-child(2) {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="sound_control">Sound <span class="on_off">on</span><span class="on_off">off</span></button>
+    <script>
+        $(".sound_control").click(function() {
+            $(".on_off").toggle();
+        });
+        $(document).ready(function() {
+            var background_sound = document.createElement("audio"); // This is the background sound function. 
+            background_sound.src = "https://www.pacdv.com/sounds/ambience_sounds/airport-gate-1.mp3";
+            background_sound.volume = 0.1;
+            background_sound.autoPlay = true;
+            background_sound.preLoad = true;
+            background_sound.controls = true;
+            $("*").hover(function() { // The sound should start playing when the website is loaded. I think the hover function is not the best solution.Also, the sound should be looped.
+                background_sound.play();
+            });
+            var click_sound = document.createElement("audio"); // This is the click sound function. It should work for every button with the .click_sound class. click_sound.src = "http://soundbible.com/mp3/Stapler-SoundBible.com-374581609.mp3";
+            click_sound.volume = 0.1;
+            click_sound.autoPlay = false;
+            click_sound.preLoad = true;
+            click_sound.controls = true;
+            $(".click_sound").click(function() {
+                click_sound.play();
+            });
+        });
+    </script>
+</body>
+
+</html>

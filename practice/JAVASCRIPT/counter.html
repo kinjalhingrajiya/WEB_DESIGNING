@@ -6,20 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        #h {
-            height: 300px;
-            width: 300px;
-            border: 2px solid;
-            font-size: 30px;
-        }
-    </style>
+
 </head>
 
-<bo <script>
-    c = setInterval("test()", 10) x = 0; h1 = document.querySelectorAll('.count') function test() { h1.innerHTML = ++x; if (x >= 300) { clearInterval(c) } }
+<body>
+    <h1 class="count" id="h"></h1>
+    <script>
+        // x = 0;
+        // a = setInterval("test()", 650)
+        // h1 = document.getElementById('h');
+
+        // function test() {
+
+        //     h1.innerHTML = ++x;
+        //     if (x >= 18) {
+        //         clearInterval(a)
+        //     }
+        // }
+        // counter over
+        // for (let i = 1; i <= 10; i++) {
+        //     setTimeout(function() {
+        //         document.write(i + "<br>");
+        //     }, i * 1000); // Delay of (10 - i) seconds
+        // } // print 1 to 10
+        for (let i = 10; i >= 1; i--) {
+            setTimeout(function() {
+                document.write(i + "<br>");
+            }, (10 - i) * 1000); // Delay of (10 - i) seconds
+        } // print 10 to 1
     </script>
 
-    </body>
+</body>
 
 </html>

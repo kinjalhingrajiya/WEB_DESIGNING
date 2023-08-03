@@ -25,7 +25,7 @@
         grid-template-columns: 1fr;
     }
     .off {
-        left: 26%;
+        left: 6%;
     }
     .content4 {
         margin-bottom: 30px;
@@ -37,9 +37,6 @@
     }
     .productpart {
         grid-template-columns: 1fr;
-    }
-    .back {
-        left: 22%;
     }
     .body {
         left: 40%;
