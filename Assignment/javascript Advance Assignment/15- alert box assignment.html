@@ -1,0 +1,36 @@
+<!-- Create a program that will select all the classes and loop over and whenever i click the
+button the alert should show -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class Loop and Alert</title>
+</head>
+<body>
+    <button id="alertButton">Click Me!</button>
+
+    <div class="class1">Class 1</div>
+    <div class="class1">Class 2</div>
+    <div class="class1">Class 3</div>
+    <div class="class1">Class 4</div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const alertButton = document.getElementById("alertButton");
+
+            alertButton.addEventListener("click", function () {
+                const elementsWithClasses = document.querySelectorAll(".class1");
+
+                elementsWithClasses.forEach(element => {
+                    alert(`Clicked: ${element.textContent}`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+

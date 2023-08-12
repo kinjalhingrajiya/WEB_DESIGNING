@@ -8,76 +8,134 @@
 </head>
 
 <body>
-    <form action="">
-        <label for="">Name:</label><input type="text" id="nm" required onblur="validate(nm,nmerr)"><span id="nmerr"></span><br>
-        <label for="">E-mail</label><input type="text" id="mail" required onblur="validate(mail,emlerr)"><span id="emlerr"></span><br>
-        <label for="M.no">M.no</label><input type="text" id="mno" required maxlength="10" minlength="10" onblur="validate(mno,mnoerr)"><span id="mnoerr"></span><br>
+    <form action="" id="myform">
+        <label for="">Name:</label><input type="text" id="nm" ><span id="nmerr"></span><br>
+        <label for="">E-mail</label><input type="text" id="mail"  ><span id="emlerr"></span><br>
+        <label for="M.no">M.no</label><input type="text" id="mno"  maxlength="10" minlength="10"><span id="mnoerr"></span><br>
         <input type="checkbox" required>Agree to all <br>
-        <button>Submit</button>
+        <input type="submit" value="submit">
     </form>
     <script>
+        form=document.getElementById('myform')
         pattern = /^[a-zA-Z]+$/;
         pattern2 = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
         pattern3 = /^[0-9]+$/;
+        name1 = document.getElementById('nm');
+        email1 = document.getElementById('mail');
+        mno1 = document.getElementById('mno');
+        nmerr1 = document.getElementById('nmerr');
+        emlerr1 = document.getElementById('emlerr');
+        mnoerr1 = document.getElementById('mnoerr');
 
-        function validate(data, text) {
-            if (data.value == "") {
-                text.innerHTML = "* Required";
-                text.style.color = "red";
-            } else {
-                if (!pattern.test(nm.value)) {
-                    nmerr.innerHTML = "*Letters Only";
-                    text.style.color = "red";
-                } else {
-                    nmerr.innerHTML = "";
-                }
-                if (!pattern2.test(mail.value)) {
-                    emlerr.innerHTML = "*Enter Valid E-mail Id";
-                    text.style.color = "red";
-                } else {
-                    emlerr.innerHTML = "";
-                }
+        name1.addEventListener('onblur',function(event){
+            let valid = true;
+            // Reset previous errors
+            nmerr1.textContent = '';
+            emlerr1.textContent = '';
 
-                if (!pattern3.test(mno.value)) {
-                    mnoerr.innerHTML = "*Number Only";
-                    text.style.color = "red";
-                } else {
-                    mnoerr.innerHTML = "";
+            // Validate name
+            if (name1.value.trim() === '') {
+                nmerr1.textContent = 'Name is required';
+                valid = false;
+            }
+            else{
+                if(!pattern.test(name1.value))
+                {
+                    nmerr1.textContent = "Letters Only";
+                    valid=false;
                 }
+            }
+        })
+        email1.addEventListener('onblur',function(event){
+            let valid = true;
+             // Reset previous errors
+             nmerr1.textContent = '';
+            emlerr1.textContent = '';
+         if(email1.value.trim()==='')
+            {
+                emlerr1.textContent = 'E-mail is required';
+                valid = false;
+            }
+            else {
+
+            if(!pattern2.test(email1.value)) {
+                emlerr1.textContent = 'Invalid email format';
+                valid = false;
+            }
+        }
+        })
+        mno1.addEventListener('onblur',function(event){
+            let valid = true;
+             // Reset previous errors
+             nmerr1.textContent = '';
+            emlerr1.textContent = '';
+            if(mno1.value.trim()==='')
+            {
+                mnoerr1.textContent = 'Mobile Number is required';
+                valid = false;
+            }
+            else {
+
+            if(!pattern3.test(mno1.value)) {
+                mnoerr1.textContent = 'Numbers Only';
+                valid = false;
+            }
+        }
+        })
+        
+        form.addEventListener('submit', function(event) {
+            let valid = true;
+
+            // Reset previous errors
+            nmerr1.textContent = '';
+            emlerr1.textContent = '';
+
+            // Validate name
+            if (name1.value.trim() === '') {
+                nmerr1.textContent = 'Name is required';
+                valid = false;
+            }
+            else{
+                if(!pattern.test(name1.value))
+                {
+                    nmerr1.textContent = "Letters Only";
+                    valid=false;
+                }
+            }
+
+            // Validate email
+            if(email1.value.trim()==='')
+            {
+                emlerr1.textContent = 'E-mail is required';
+                valid = false;
+            }
+            else {
+
+            if(!pattern2.test(email1.value)) {
+                emlerr1.textContent = 'Invalid email format';
+                valid = false;
+            }
+        }
+         // Validate Mobile
+            if(mno1.value.trim()==='')
+            {
+                mnoerr1.textContent = 'Mobile Number is required';
+                valid = false;
+            }
+            else {
+
+            if(!pattern3.test(mno1.value)) {
+                mnoerr1.textContent = 'Numbers Only';
+                valid = false;
             }
         }
 
-
-
-        function validate1(data, text) {
-            if (data.value == "") {
-                text.innerHTML = "* Required";
-                text.style.color = "red";
-            } else {
-                if (!pattern2.test(mail.value)) {
-                    emlerr.innerHTML = "*Enter Valid E-mail Id";
-                    text.style.color = "red";
-                } else {
-                    emlerr.innerHTML = "";
-                }
-
+            // Prevent form submission if not valid
+            if (!valid) {
+                event.preventDefault();
             }
-        }
-
-        function validate2(data, text) {
-            if (data.value == "") {
-                text.innerHTML = "* Required";
-                text.style.color = "red";
-            } else {
-                if (!pattern3.test(mno.value)) {
-                    mnoerr.innerHTML = "*Number Only";
-                    text.style.color = "red";
-                } else {
-                    mnoerr.innerHTML = "";
-                }
-            }
-        }
+        });
+    
     </script>
 </body>
-
 </html>

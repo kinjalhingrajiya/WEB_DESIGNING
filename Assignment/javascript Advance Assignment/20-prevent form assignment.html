@@ -1,0 +1,54 @@
+<!-- Prevent the browser when i click the form submit button -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Prevent Form Submission</title>
+</head>
+
+<body>
+
+  <form id="myForm">
+    <input type="text" name="username" placeholder="Username" id="nm1"><span id="nmerr"></span><br>
+    <input type="text" name="email" placeholder="email" id="eml1"><span id="emlerr"></span> <br>
+    <button type="submit" id="submitButton">Submit</button>
+  </form>
+
+  <script>
+    email1 = document.getElementById('eml1');
+    name1 = document.getElementById('nm1');
+    nmerr1=document.getElementById('nmerr');
+    emlerr1=document.getElementById('emlerr')
+    pattern = /^[a-zA-Z]+$/;
+        pattern2 = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    document.getElementById("myForm").addEventListener("submit", function (event) {
+      let valid = true;
+      if (name1.value.trim() === '') {
+        nmerr1.innerHTML = '*Required';
+        valid = false;
+      }
+      else {
+        if (!pattern.test(name1.value)) {
+          nmerr1.innerHTML = "Letters Only";
+          valid = false;
+        }
+      }
+      if (email1.value.trim() === '') {
+        emlerr1.innerHTML = '*Required';
+        valid = false;
+      }
+      else {
+
+        if (!pattern2.test(email1.value)) {
+          emlerr1.innerHTML = 'Invalid email format';
+          valid = false;
+        }
+      }
+      if (!valid) {
+        event.preventDefault();
+      }
+        });
+  </script>
+</body>
+
+</html>

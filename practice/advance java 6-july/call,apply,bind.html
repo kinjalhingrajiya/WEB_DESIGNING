@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const student={fname:'priyank',lname:'patel'}
+        const student1={fname:'kinjal',lname:'patel'};
+        fullname = function(hometown,state)
+        {
+            console.log(this.fname + " " + this.lname +" " + hometown + "," + state);
+
+        }
+       fullname.call(student,"snagar","gujarat"); 
+    //    call method pass value as a individual
+       fullname.apply(student1,["surat","Gujarat"]);
+       //apply method pass value as a array
+        const a =  fullname.bind(student1,"rajkot","Gujarat");         
+        // bind method store in variable and than print that variable like a function;    
+        a();
+    </script>
+</body>
+</html>

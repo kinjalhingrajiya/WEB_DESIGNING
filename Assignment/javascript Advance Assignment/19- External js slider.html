@@ -1,0 +1,170 @@
+<!-- Use external js library to show slider -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: #23E3C9;
+        }
+        
+        .slider {
+            width: 800px;
+            height: 500px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .radio {
+            width: 500%;
+            height: 500px;
+            display: flex;
+        }
+        
+        .slide {
+            width: 20%;
+            transition: 2s;
+        }
+        
+        .radio input {
+            display: none;
+        }
+        
+        .slide img {
+            width: 800px;
+            height: 500px;
+        }
+        
+        .manual {
+            position: absolute;
+            width: 800px;
+            margin-top: -40px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .manual-btn1 {
+            border: 2px solid #40d3dc;
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 1s;
+        }
+        
+        .manual-btn1:not(:last-child) {
+            margin-right: 40px;
+        }
+        
+        .manual-btn1:hover {
+            background: #40d3dc;
+        }
+        
+        #radio1:checked~.first {
+            margin-left: 0;
+        }
+        
+        #radio2:checked~.first {
+            margin-left: -20%;
+        }
+        
+        #radio3:checked~.first {
+            margin-left: -40%;
+        }
+        
+        #radio4:checked~.first {
+            margin-left: -60%;
+        }
+        
+        .autonav {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            width: 800px;
+            margin-top: 460px;
+        }
+        
+        .autonav div {
+            border: 2px solid #40d3dc;
+            padding: 5px;
+            border-radius: 10px;
+            transition: 1s;
+        }
+        
+        .autonav div:not(:last-child) {
+            margin-right: 40px;
+        }
+        
+        #radio1:checked~.autonav .autonav-btn1 {
+            background: #40d3dc;
+        }
+        
+        #radio2:checked~.autonav .autonav-btn2 {
+            background: #40d3dc;
+        }
+        
+        #radio3:checked~.autonav .autonav-btn3 {
+            background: #40d3dc;
+        }
+        
+        #radio4:checked~.autonav .autonav-btn4 {
+            background: #40d3dc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider">
+        <div class="radio">
+            <input type="radio" id="radio1" name="radio_btn">
+            <input type="radio" id="radio2" name="radio_btn">
+            <input type="radio" id="radio3" name="radio_btn">
+            <input type="radio" id="radio4" name="radio_btn">
+            <div class="slide first">
+                <img src="1.jpeg" alt="">
+            </div>
+            <div class="slide">
+                <img src="2.jpeg" alt="">
+            </div>
+            <div class="slide">
+                <img src="3.jpeg" alt="">
+            </div>
+            <div class="slide">
+                <img src="4.jpg" alt="">
+            </div>
+            <div class="autonav">
+                <div class="autonav-btn1"></div>
+                <div class="autonav-btn2"></div>
+                <div class="autonav-btn3"></div>
+                <div class="autonav-btn4"></div>
+            </div>
+        </div>
+        <div class="manual">
+            <label for="radio1" class="manual-btn1"></label>
+            <label for="radio2" class="manual-btn1"></label>
+            <label for="radio3" class="manual-btn1"></label>
+            <label for="radio4" class="manual-btn1"></label>
+        </div>
+    </div>
+    <script>
+        var counter = 1;
+        setInterval(function() {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+</body>
+
+</html>

@@ -11,7 +11,7 @@
 
     <script>
         class Mother {
-            constructor(tot = 100) {
+            constructor(tot) {
                 this.total = tot;
             }
             show1() {
@@ -20,7 +20,7 @@
 
         }
         class Son extends Mother {
-            constructor(tot, share = 0.1) {
+            constructor(tot, share) {
                 super(tot);
                 this.share = share;
             }
@@ -30,7 +30,7 @@
         }
 
         class Daughter extends Mother {
-            constructor(tot, share = 0.9) {
+            constructor(tot, share) {
                 super(tot);
                 this.share = share;
             }
@@ -38,8 +38,8 @@
                 console.log("Daughter property inherit from Mother property (out of 100%) " + this.show1() * this.share + "%");
             }
         }
-        const obj = new Son;
-        const obj1 = new Daughter;
+        const obj = new Son(100,0.1)
+        const obj1 = new Daughter(100,0.9);
         obj.show();
         obj1.show2();
     </script>

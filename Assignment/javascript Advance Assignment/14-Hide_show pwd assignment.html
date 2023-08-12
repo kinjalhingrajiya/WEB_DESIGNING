@@ -1,0 +1,52 @@
+<!-- ● Create a program to hide/show the password -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        div{
+            /* border:2px solid; */
+            display: flex;
+        }
+        label
+        {
+            border:none;
+        }
+        .fa-eye{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    UserName: <input type="text"><br>
+    <div><label for="">Password:</label><input type="password" id="pwd"><i class="fa-solid fa-eye" onclick="myfunction()"></i><i class="fa-solid fa-eye-slash" onclick="myfunction()"></i></div>
+    <br><input type="submit" value="submit">
+    <script>
+        function myfunction() {
+            var showpwd = document.getElementById("pwd");
+            openeye=document.querySelector(".fa-eye");
+            closeeye=document.querySelector(".fa-eye-slash");
+            if (showpwd.type === "password") {
+                showpwd.type = "text";
+                closeeye.style.display="none";
+                openeye.style.display = "block";
+            }
+            else {
+                showpwd.type = "password";
+                openeye.style.display = "none"
+                closeeye.style.display="block";
+
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

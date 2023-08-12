@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="b1">Get Text</button>
+    <button id="b2">Get JSON</button>
+    <button id="b3">Get API</button>
+    <hr>
+    <h1 id="f1"></h1>
+    <form action="" id="myform">
+        title: <input type="text" name="" id="title"><br>
+        body: <input type="text" name="" id="body"><br>
+        <input type="submit" value="submit" id="sub">
+    </form>
+
+    <script>
+        btn1 = document.getElementById('b1');
+        btn2 = document.getElementById('b2');
+        btn3 = document.getElementById('b3');
+        form1 = document.getElementById('myform');
+        btn1.addEventListener("click", gettext);
+        btn2.addEventListener("click", getjson);
+        btn3.addEventListener("click", getAPI);
+        form1.addEventListener("submit", subinapi)
+
+
+
+        function gettext() {
+            fetch("sample.txt")
+                .then((res) => { return res.text() })
+                .then((data) => { document.getElementById('f1').innerHTML = data; })
+        }
+        function getjson() {
+            fetch("demo.json")
+                .then((res) => { return res.json() })
+                .then((data) => {
+                    html = "Json Data";
+                    data.forEach(d => {
+                        html += `<ul>
+                        <li>${d.id}</li>
+                        <li>${d.name}</li>
+                        <li>${d.age}</li>
+                        <li>${d.city}</li>
+                        </ul>`
+                    })
+                    document.getElementById('f1').innerHTML = html;
+                })
+        }
+        function getAPI() {
+            fetch("https://jsonplaceholder.typicode.com/users")
+                .then((res) => { return res.json() })
+                .then((data) => {
+                    html = "Json Data from API";
+                    data.forEach(function (users) {
+                        html += `<ul>
+                        <li>${users.id}</li>
+                        <li>${users.name}</li>
+                        <li>${users.username}</li>
+                        <li>${users.email}</li>
+                        </ul>`
+                    })
+                    document.getElementById('f1').innerHTML = html;
+                })
+        }
+        function subinapi(e) {
+            e.preventDefault();
+            t = document.getElementById("title").value;
+            b = document.getElementById("body").value;
+            fetch("https://jsonplaceholder.typicode.com/posts", {
+                method: "POST",
+                application: "application/json, text/plain */*",
+                headers: { "content-type": "appliction/json" },
+                body: JSON.stringify({ title: title, body: body })
+            })
+                .then((res) => { return res.json() })
+                .then((data) => { console.log(data) })
+        }
+    </script>
+</body>
+</html>
