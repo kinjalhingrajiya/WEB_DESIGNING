@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .x 
+        {
+            background: coral;
+            font-size: 34px;
+            font-weight: bold;
+            font-family: cursive;
+            margin: 34px;
+            padding: 34px;
+        }
+
+        .reveal 
+        {
+            transform: translateY(150px);
+            opacity: 0;
+            transition: all 2s ease;
+        }
+
+        .active 
+        {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="x reveal">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur obcaecati optio modi quas dignissimos est! Reiciendis quaerat dolorem, nesciunt voluptatibus culpa, eligendi, tempore nulla explicabo labore totam aut hic fuga?
+    </div>
+
+    <div class="x reveal">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur obcaecati optio modi quas dignissimos est! Reiciendis quaerat dolorem, nesciunt voluptatibus culpa, eligendi, tempore nulla explicabo labore totam aut hic fuga?
+    </div>
+
+
+    <div class="x reveal">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur obcaecati optio modi quas dignissimos est! Reiciendis quaerat dolorem, nesciunt voluptatibus culpa, eligendi, tempore nulla explicabo labore totam aut hic fuga?
+    </div>
+
+    <div class="x reveal">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur obcaecati optio modi quas dignissimos est! Reiciendis quaerat dolorem, nesciunt voluptatibus culpa, eligendi, tempore nulla explicabo labore totam aut hic fuga?
+    </div>
+
+    <div class="x reveal">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur obcaecati optio modi quas dignissimos est! Reiciendis quaerat dolorem, nesciunt voluptatibus culpa, eligendi, tempore nulla explicabo labore totam aut hic fuga?
+    </div>
+
+    <div class="x reveal">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur obcaecati optio modi quas dignissimos est! Reiciendis quaerat dolorem, nesciunt voluptatibus culpa, eligendi, tempore nulla explicabo labore totam aut hic fuga?
+    </div>
+
+
+    <div class="x reveal">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur obcaecati optio modi quas dignissimos est! Reiciendis quaerat dolorem, nesciunt voluptatibus culpa, eligendi, tempore nulla explicabo labore totam aut hic fuga?
+    </div>
+
+    <div class="x reveal">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur obcaecati optio modi quas dignissimos est! Reiciendis quaerat dolorem, nesciunt voluptatibus culpa, eligendi, tempore nulla explicabo labore totam aut hic fuga?
+    </div>
+
+    <script>
+        elements = document.querySelectorAll('.reveal');
+
+        console.log(elements);
+
+        window.addEventListener("scroll",reveal)
+
+       function reveal()
+       {
+
+
+        for(i=0;i<elements.length;i++)
+        {
+            windowHeight = window.innerHeight;
+            revealTop = elements[i].getBoundingClientRect().top;
+            revealpoint =200;
+
+            if(revealTop < windowHeight - revealpoint)
+            {
+                elements[i].classList.add("active");
+            }
+
+        }
+       }
+
+
+
+    </script>
+
+</body>
+</html>

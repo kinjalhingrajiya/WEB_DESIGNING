@@ -5,9 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        img
+        {
+            margin:150px 35%;
+        }
+    </style>
 </head>
 
-<body>
+<body id="b1">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" alt="" id="img1">
     <form action="" id="myform">
         <label for="">Name:</label><input type="text" id="nm" ><span id="nmerr"></span><br>
         <label for="">E-mail</label><input type="text" id="mail"  ><span id="emlerr"></span><br>
@@ -26,7 +33,12 @@
         nmerr1 = document.getElementById('nmerr');
         emlerr1 = document.getElementById('emlerr');
         mnoerr1 = document.getElementById('mnoerr');
-
+        img=document.getElementById('img1');
+        body1=document.getElementById('b1')
+        setTimeout(function() {
+              body1.style.display="block"
+              img.style.display="none"
+            },5000);
         name1.addEventListener('onblur',function(event){
             let valid = true;
             // Reset previous errors
