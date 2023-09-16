@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="2" cellpadding="10px">
+        <tr>
+            <th>Product Info</th>
+            <th>Quantity</th>
+            <th >Price(Per Unit)</th>
+            <th >Price(SubTotal)</th>     
+            <th></th>
+        </tr>
+        <tr>
+            <td>Furtunta-HardWare</td>
+            <td><input type="number" id="qty" ></td>
+            <td id="price">29.97</td>
+            <td  id="sub"></td>
+            <td><button  onclick="add()">click</button>
+            <button onclick="remove()">Remove</button></td>
+        </tr>
+        <tr>
+            <td>Woven-Window</td>
+            <td><input type="number" id="qty" ></td>
+            <td id="price">59.97</td>
+            <td  id="sub"></td>
+            <td><button onclick="add()">click</button>
+                <button onclick="remove()">Remove</button></td>
+        </tr>
+    </table>
+    <script>
+        let sub_qty=document.querySelectorAll('#qty');
+        let sub_price=document.querySelectorAll('#price')
+        let sub_td=document.querySelectorAll('#sub')
+    //   function add()
+    //    {
+    for(i=0;i<=sub_qty.length;i++)
+    {
+        let sub_total = sub_qty[i].value * sub_price[i].innerHTML;
+    sub_td[i].innerHTML = sub_total; 
+    }
+// }
+function remove()
+{
+    for(i=0;i<=sub_qty.length;i++)
+    {
+       
+    sub_td[i].innerHTML ="";
+    }
+}
+
+    </script>
+</body>
+</html>

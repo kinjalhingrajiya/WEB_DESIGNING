@@ -1,0 +1,273 @@
+<!-- Create a form and validate using JavaScript -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        span{
+            color:red;
+        }
+        
+        label
+        {
+            border:none;
+        }
+        .fa-eye{
+            display: none;
+        }
+        .demo{
+            background-color: lightblue;
+            width:500px;
+            padding:70px;
+            margin:100px 350px 
+
+        }
+        .spa
+        {
+            padding:10px;
+            margin-left: 80px;
+
+        }
+     
+        input[type=checkbox]
+        {
+            margin-left: 120px;
+            margin-top:10px;
+            margin-left: 110px;
+
+        }
+        input[type=radio]
+        {
+            margin-left: 10px;
+            margin-top:10px;
+            margin-left: 80px;
+
+        }
+        #pwd1
+        {
+            margin-right:56px;
+        }
+        textarea
+        {
+            margin-left:59px;
+
+        }
+        input[type=submit]
+        {
+            padding:10px 30px;
+            text-align: center;
+            margin-left:100px;
+            margin-top:20px;
+        }
+        h1
+        {
+            margin-bottom: 30px;
+        }
+        #pwd
+        {
+            padding:10px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="demo">
+    <form action="" id="myform"> 
+        <h1>Registration Form</h1>
+        <label for="">Name:</label><input type="text" id="nm" class="spa"><span id="nmerr"></span><br>
+        <label for="">E-mail</label><input type="text" id="mail" class="spa" ><span id="emlerr"></span><br>
+        <label for="" id="pwd1">Password:</label><input type="password" id="pwd"><i class="fa-solid fa-eye" onclick="myfunction()"></i><i class="fa-solid fa-eye-slash" onclick="myfunction()"></i><span id="pwderr"></span>
+<br>
+        <label for="M.no">M.no:</label><input type="text" class="spa" id="mno"  maxlength="10" minlength="10" ><span id="mnoerr"></span><br>
+        <label for="">Gender:</label><input type="radio" name="Male" id="chk1">Male <input type="radio" name="Male" id="chk2">Female<span id="radioerr"></span><br>
+        <label for="">Address:</label><textarea name="" id="" cols="30" rows="auto"></textarea><br>
+        <input type="checkbox" id="chkbox" >Agree to all <span id="chkerr"></span><br>
+        <input type="submit" value="submit">
+    </form>
+</div>
+    <script>
+        form=document.getElementById('myform')
+        pattern = /^[a-zA-Z]+$/;
+        pattern2 = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        pattern3 = /^[0-9]+$/;
+        name1 = document.getElementById('nm');
+        email1 = document.getElementById('mail');
+        mno1 = document.getElementById('mno');
+        showpwd = document.getElementById("pwd");
+        checkbox=document.getElementById('chkbox');
+        radio1=document.getElementById('chk1');
+        radio2=document.getElementById('chk2');
+        nmerr1 = document.getElementById('nmerr');
+        emlerr1 = document.getElementById('emlerr');
+        mnoerr1 = document.getElementById('mnoerr');
+        pwderr1=document.getElementById('pwderr');
+        chkerr1=document.getElementById('chkerr');
+        radioerr1=document.getElementById('radioerr');
+        name1.addEventListener('blur',function(){
+           
+            if (name1.value.trim() === '') {
+                nmerr1.innerHTML = '*Required';
+            }
+            else{
+                if(!pattern.test(name1.value))
+                {
+                    nmerr1.innerHTML = "Letters Only";
+                   
+                }
+            }
+        })
+        email1.addEventListener('blur',function(){
+          
+             
+         if(email1.value.trim()==='')
+            {
+                emlerr1.innerHTML = '* Required';
+               
+            }
+            else {
+
+            if(!pattern2.test(email1.value)) {
+                emlerr1.innerHTML = 'Invalid-email';
+                
+            }
+        }
+        })
+       
+        mno1.addEventListener('blur',function(){
+           
+           
+            if(mno1.value.trim()==='')
+            {
+                mnoerr1.innerHTML = '* Required';
+            }
+            else {
+
+            if(!pattern3.test(mno1.value)) {
+                mnoerr1.innerHTML = 'Numbers Only';
+                
+            }
+        }
+        })
+        showpwd.addEventListener('blur',function(){
+            if (showpwd.value == '') {
+                pwderr1.innerHTML = '*Required';
+            }
+            else
+            {
+                pwderr1.innerHTML = "";
+            }
+        })
+        function myfunction() {
+            openeye=document.querySelector(".fa-eye");
+            closeeye=document.querySelector(".fa-eye-slash");
+            
+            if (showpwd.type === "password") {
+                showpwd.type = "text";
+                closeeye.style.display="none";
+                openeye.style.display = "inline";
+            }
+            else {
+                showpwd.type = "password";
+                openeye.style.display = "none"
+                closeeye.style.display="inline";
+
+            }
+        }
+        form.addEventListener('submit', function(event) {
+            let valid = true;
+
+            // Reset previous errors
+            nmerr1.innerHTML = '';
+            emlerr1.innerHTML = '';
+
+            // Validate name
+            if (name1.value.trim() === '') {
+                nmerr1.innerHTML = '*Required';
+                valid = false;
+            }
+            else{
+                if(!pattern.test(name1.value))
+                {
+                    nmerr1.innerHTML = "Letters Only";
+                    valid=false;
+                }
+            }
+
+            // Validate email
+            if(email1.value.trim()==='')
+            {
+                emlerr1.innerHTML = '*Required';
+                valid = false;
+            }
+            else {
+
+            if(!pattern2.test(email1.value)) {
+                emlerr1.innerHTML = 'Invalid email format';
+                valid = false;
+            }
+        }
+        
+         // Validate Mobile
+            if(mno1.value.trim()==='')
+            {
+                mnoerr1.innerHTML = '*Required';
+                valid = false;
+            }
+            else {
+
+            if(!pattern3.test(mno1.value)) {
+                mnoerr1.innerHTML = 'Numbers Only';
+                valid = false;
+            }
+        }
+        //validate password
+        if (showpwd.value == '') {
+                pwderr1.innerHTML = '*Required';
+            }
+            else
+            {
+                pwderr1.innerHTML = "";
+            }
+            // Prevent form submission if not valid
+            if (!valid) {
+                event.preventDefault();
+            }
+            //validate checkbox 
+            if (!checkbox.checked ) {
+                chkerr1.innerHTML = '*Required';
+            }
+            else
+            {
+                pwderr1.innerHTML = "";
+            }
+        if(!radio1.checked && !radio2.checked)
+        {
+           radioerr1.innerHTML='*Required';
+        }
+        else
+        {
+            radioerr1.innerHTML = '';
+        }
+       
+            // Prevent form submission if not valid
+            if (!valid) {
+                event.preventDefault();
+            }
+        });
+
+
+    
+    </script>
+</body>
+</html>
