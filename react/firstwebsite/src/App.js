@@ -1,6 +1,6 @@
 import Navbar from "./componants/Navbar";
 import Textform from "./componants/Textform";
-// import About from "./componants/About";
+import About from "./componants/About";
 import './App.css';
 import React, { useState } from 'react';
 
@@ -26,7 +26,7 @@ function App() {
    }
   return (
     <><Navbar title="TextUtils" mode={mode} togglemode={togglemode}/>
-    {/* <About/> */}
+    <About/>
     <div className="container my-3"><Textform heading="Enter the Text to Analize" mode={mode}/></div>
     </>
   );

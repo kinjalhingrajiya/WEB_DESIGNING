@@ -1,0 +1,38 @@
+.header
+{
+    background-color: aquamarine;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding:20px;
+}
+.content
+{
+    border:2px solid;
+    background-color: bisque;
+    flex-wrap: wrap;
+    justify-content:space-evenly ;
+    & div
+    {
+        background-color: blueviolet;
+    }
+}
+.footer
+{
+    background-color: aqua;
+    padding:20px;
+    font-size: 30px;
+    font-weight: bold;
+    & span
+    {
+        color:red;
+    }
+}
+button
+{
+    padding:4px 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
