@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import Createconnection from "./createconnection";
 function Chatroom({roomId})
 {
-    const[serverUrl,setserverUrl] = useState("http:/localhost/1234");
+    const[serverUrl] = useState("http:/localhost/1234");
     useEffect(()=>{
         const connection=Createconnection(roomId,serverUrl);
         connection.connect();

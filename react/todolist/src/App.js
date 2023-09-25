@@ -1,62 +1,66 @@
-import React from 'react'
-import { useState } from "react";
-import Tasklist from "./Tasklist";
-import Addtodo from "./Addtodos";
+import { useState } from 'react';
+import AddTodo from './Addtodos';
+import TaskList from './Tasklist';
 
-let nextid=3;
-let initialtodo=[{
-  id:0,
-  title:"Apple"
-},
+let nextId =4;
+const intialTodos = [
+  {id:1,title:"Apple"},
+  {id:2,title:"Milk"},
+  {id:3,title:"Bread"}
+]
+
+function App() {
+
+ const[todos,setTodos] = useState(intialTodos)
+
+function handleAddTodo(title)
 {
-  id:1,
-  title:"Banana"
-},
-{
-  id:2,
-  title:"Orange"
-}]
- function App()
-{
-  const[todos,settodos] = useState(initialtodo)
-  
-  function handleaddtodos(title)
-  {
-      settodos([ 
-        ...todos,
-        {
-       
-        id:nextid++,
-        title:title
-        }
-      ])
-  }
-  function handlechangetodos(nexttodos)
-  {
-    
-      settodos(todos.map((t)=>{
-        if(t.id===nexttodos.id)
-        {
-          return nexttodos;
-        }
-        else
-        {
-          return t;
-        }}
-      ))
-  }
-  function handledeletetodos(todosid)
-  {
-    settodos(todos.filter((t)=>
+  setTodos([
+    ...todos,
     {
-        return t.id!==todos.id;
-    }))
-  }
-return(<>
-<Addtodo onaddtodos={handleaddtodos}/>
-<Tasklist todos={todos} onchangetodos={handlechangetodos} ondeletetodos={handledeletetodos}/>
-
-
-</>)
+      id:nextId++,
+      title:title
+    }
+  ])
 }
+
+function handleChangeTodo(nextTodo)
+{
+  setTodos(todos.map((t)=>{
+    if(t.id == nextTodo.id)
+    {
+      return nextTodo;
+    }
+
+    else
+    {
+      return t;
+    }
+
+  }))
+}
+
+
+function handleDeleteTodo(todoId)
+{
+  setTodos(todos.filter((t)=>{
+    return t.id!==todoId
+  }))
+}
+
+
+  return (
+    <div className="App">
+     <AddTodo onAddTodo={handleAddTodo}/>
+    <TaskList
+    todos={todos}
+    onChangeTodo={handleChangeTodo}
+    onDeleteTodo={handleDeleteTodo}
+
+    />
+    
+    </div>
+  );
+}
+
 export default App;

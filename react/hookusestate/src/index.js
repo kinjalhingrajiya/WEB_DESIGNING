@@ -7,7 +7,7 @@ import Details from './task.js';
 import TodoList from './add.js'
 import Counter from './counterwithusestate.js' 
 import ResetKey from './keyresetusingusestate';
-import Counter1 from './assignment';
+
 
 
 
@@ -20,7 +20,6 @@ root.render(
    <Details/>
   <TodoList/>
   <Counter/>
-  <Counter1/>
   <ResetKey/>
   </React.StrictMode>
 );

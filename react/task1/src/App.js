@@ -1,6 +1,7 @@
 function App() {
   const adddiv=document.getElementById('div1');
   const i1=document.getElementById('inp1');
+  // console.log(adddiv.innerHTML)
   
   const add1=()=> 
    {
@@ -25,15 +26,10 @@ function App() {
     <>
     <input type="text" name="" id="inp1" onKeyDown={handleKeyDown} />
     <button id="btn1" onClick={add1}>Add</button>
-    <div style={{"border":"2px solid black", "height":"auto", "width":"300px","marginTop":"30px"}} id="div1"></div>
+    <div style={{"border":"2px solid black", "height":"auto", "width":"300px","marginTop":"30px"}} id="div1">hii</div>
     <button onClick={edit}>Edit</button>
     <button onClick={eventtype}>Event Type Check</button>
-    
     </>
   );
 }
-
 export default App;
-
-
-
