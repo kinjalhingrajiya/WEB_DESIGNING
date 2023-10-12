@@ -15,7 +15,7 @@ function Modalbox({isopen,children}) {
         }
     },[isopen])
   return (
-    <dialog ref={ele}>
+    <dialog ref={ele} style={{backgroundColor:"black", color:"white"}}>
       {children}
     </dialog>
   )
