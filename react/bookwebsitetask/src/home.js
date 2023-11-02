@@ -4,51 +4,29 @@ import { Container,Button,Row,Col} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import Navbar from './navbar';
 import { useState } from 'react';
-import { DateRangePicker } from 'react-date-range';
-import 'react-date-range/dist/styles.css'; // main style file
-import 'react-date-range/dist/theme/default.css'; // theme css file
-import { format } from 'date-fns';
 import { userdata } from './user';
 import Header from './header';
-
-// import Filtercard from './Filtercard';
-
-
-function Date1()
-{
-  const [date,setdate] = useState({
-    startDate: new Date(),
-    endDate: new Date(),
-    key: 'selection',
-  })
-  const [opendate,setopendate] = useState(false);
-  return(<>
-  <div className="container1">
-  <span className="calender1" onClick={()=>{
-      setopendate((prev)=>!prev)
-  }}>
-    {`${format(date.startDate, 'dd-MMM-yyyy')} - ${format(date.endDate, 'dd-MMM-yyyy')} `}
-    </span>
-  {opendate && <DateRangePicker className='daterange' 
-        ranges={[date]}
-        onChange={(ranges)=>{setdate(ranges.selection)}}
-        minDate={new Date()}
-        months={2}
-      />}
-  </div>
-  </>)
-}
+import Date1 from './Date1';
 
 
 
 function Home() {
-  const [query,setquery] = useState();
+  const [query,setquery] = useState('');
   function Filtercard() {
     return (
      <>
      <Container className='mt-5'>
     <Row>
-    <Col xl={3} className='border border-2 border-Secondary rounded mt-3 g-1'></Col>
+    <Col xl={3} className='border border-2 border-Secondary rounded mt-3 g-1 p-1'>
+    <iframe className='border border-rounded-3'
+    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14686.282754045384!2d72.67424525!3d23.03953015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1697173440376!5m2!1sen!2sin"  
+      width="100%" 
+      height="200" 
+      allowfullscreen="true"  
+      style={{ border: 0 }} 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+        </iframe></Col>
     <Col xl={9}>
      {userdata.filter((i1)=>i1.title.includes(query)).map((i1)=>
               <Row className='border border-2 border-Secondary rounded p-1 mt-3'>
@@ -99,15 +77,15 @@ function Home() {
        <Date1 className='bg-white border border-0 px-1  w-md-100 w-sm-100'/>
        </div>
        <div className='d-lg-inline d-md-block d-sm-block start-0    border border-4  m-0 border-warning py-2 px-1  bg-white child1'><input type="button" value="2-adults - 0-Children - 1 Room" className='bg-white border border-0 px-1  w-md-100 w-sm-100'/></div>
-       <div className='d-lg-inline d-md-block d-sm-block start-0   border border-4 m-0 border-warning py-2    child1'><button className=' border border-0 px-4 p-1 btn text-white child1 ' onClick={Filtercard}>Search</button></div>
+       <div className='d-lg-inline d-md-block d-sm-block start-0   border border-4 m-0 border-warning py-2    child1'>
+        <button className=' border border-0 px-4 p-1 btn text-white child1 ' onClick={Filtercard}>Search</button>
+        </div>
        </div>
     </Container>
     </Container>
-    {/* <Filtercard/> */}
-    
-
+    {/* {Filtercard()} */}
     </>
   )
 }
 
-export default Home
+export default Home;
