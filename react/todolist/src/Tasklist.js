@@ -18,8 +18,6 @@ function TaskList({todos,onChangeTodo,onDeleteTodo}) {
     </div>
   )
 }
-
-
 function Task({todo,onChange,onDelete})
 {
 

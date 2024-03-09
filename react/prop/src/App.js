@@ -1,15 +1,10 @@
 import React from 'react';
 
-class One extends React.Component
-{
-  render(){
-    var a = "kinjal1"
-    return(<><h1>{a}</h1></>);
-  }
-}
-function App() {
+function App(props) {
   return (
-    <One/>
+    <>
+        <h1>Good Morning {props.name}</h1>
+        </>
   );
 }
 export default App;

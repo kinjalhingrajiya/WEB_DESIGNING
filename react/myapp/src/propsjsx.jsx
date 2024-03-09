@@ -1,23 +1,23 @@
 import React from "react";
 import PropTypes from "prop-types";
-class Parent1 extends React.Component {
-    render() {
-        return (
-             < > <h1> helloo
-                 </h1>
-             </> )
-    }
-}
-class Child2 extends React.Component
-{
-    render(){
-        return(
-            <>
-            <h1>{this.props.name}</h1>
-            </>
-        )
-    }
-}
+// class Parent1 extends React.Component {
+//     render() {
+//         return (
+//              < > <h1> helloo
+//                  </h1>
+//              </> )
+//     }
+// }
+// class Child2 extends React.Component
+// {
+//     render(){
+//         return(
+//             <>
+//             <h1>{this.props.name}</h1>
+//             </>
+//         )
+//     }
+// }
 function Parent()
 {
     return(
